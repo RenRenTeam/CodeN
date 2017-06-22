@@ -1,0 +1,6 @@
+{
+  "name": "GetActionData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GetActionData.js"
+}

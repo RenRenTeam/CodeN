@@ -1,0 +1,783 @@
+@import "../../themecolor.less";
+@import "../../function.less";
+@import '../../control.less';
+
+@openclassbgcolor: #f5f5f5;
+#txtName{
+    float: left;
+    width: 140px !important;
+}
+#txtEamil{
+    float: left;
+    width: 200px !important;
+    margin-left: 35px;
+}
+textarea{
+    width: 744px;
+    height: 200px;
+    padding: 5px;
+    border-color: @themecolor;
+}
+.confrimPingJia{
+    float: right;
+    padding: 15px 30px;
+    font-size: 18px;
+    margin-top:10px;
+}
+#nodeOpenClassDetail{
+    .banner {
+        width: 100%;
+        padding: 60px 0;
+
+        .open-class-info-box {
+            width: 1024px;
+            height: 430px;
+            margin: 0 auto;
+
+            .detail-content {
+                width: 850px;
+                height: 430px;
+                float: left;
+                background: #fff;
+                margin-right: 10px;
+
+                .class-img {
+                    width: 475px;
+                    height: 430px;
+                    float: left;
+                    margin-right: 15px;
+
+                    img {
+                        width: 475px;
+                        height: 430px;
+                    }
+                }
+
+                .class-description {
+                    float: left;
+                    font-size: 14px;
+                    width: 300px;
+
+                    h2 {
+                        font-size: 24px;
+                        word-wrap: break-word;
+                    }
+
+                    .class-info {
+                        font-size: 12px;
+
+                        .class-length, .star, .enroll, .share {
+                            float: left;
+                            height: 20px;
+                            line-height: 20px;
+                        }
+
+                        .share {
+                            img {
+                                padding: 0 0 4px 10px;
+                            }
+                        }
+
+                        .class-length {
+                            .length {
+                                color: @themecolor;
+                            }
+                        }
+                    }
+
+                    .date {
+                        margin: 15px auto 15px auto;
+                    }
+
+                    .price-box {
+                        color: #f86a6a;
+                        font-size: 24px;
+
+                        .price {
+                            font-size: 48px;
+                        }
+                    }
+
+                    .period {
+                        margin: 15px 0;
+                        height: 30px;
+                        line-height: 30px;
+                        border: 1px solid #f86a6a;
+                        padding: 0 12px;
+                    }
+
+                    .spearker {
+                        color: #000;
+                    }
+
+                    .count-down {
+                        margin: 20px 0 40px 0;
+
+                        span {
+                            color: #f86a6a;
+                        }
+                    }
+
+                    .action {
+                        button {
+                            width: 165px;
+                            height: 50px;
+                            font-size: 24px;
+                        }
+                    }
+                }
+            }
+
+            .enroll-record {
+                width: 160px;
+                height: 430px;
+                float: left;
+                background: #fff;
+
+                h4 {
+                    height: 58px;
+                    line-height: 58px;
+                    font-size: 17px;
+                    margin: auto;
+                    border-bottom: 1px solid @hrcolor;
+                    text-align: center;
+
+                    span {
+                        font-size: 14px;
+                        color: #f86a6a;
+                    }
+                }
+
+                ul {
+                    margin: 15px 0 0 10px;
+
+                    li {
+                        float: left;
+                        margin-bottom: 12px;
+
+                        .personnel-box {
+                            padding: 0 15px;
+
+                            .img {
+                                width: 40px;
+                                height: 40px;
+
+                                img {
+                                    width: 40px;
+                                    height: 40px;
+                                }
+                            }
+
+                            .name {
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .open-class-detail-box {
+        width: 1024px;
+        margin: 80px auto auto auto;
+
+        .left-box {
+            width: 735px;
+            margin-right: 70px;
+            float: left;
+
+            .tabs-box {
+                .tabs {
+                    .item {
+                        font-size: 18px;
+                    }
+                }
+
+                .tab-content {
+                    .open-class-detail-content {
+                        padding: 45px 3px 0 3px;
+
+                        h5 {
+                            font-size: 18px;
+                            color: @themecolor;
+                            margin: auto;
+                        }
+
+                        .date-plan {
+                            margin: 20px 0;
+                            position: relative;
+                            font-size: 0;
+
+                            .week {
+                                width: 470px;
+                                height: 36px;
+                                position: relative;
+                                background: url(http://passport.shenyuan.org/WebResources/Default/images/open-class/long-arrow.png) no-repeat right bottom;
+                                margin: auto 20px auto 3px;
+                                display: inline-block;
+                                *display: inline;
+                                *zoom: 1;
+                                vertical-align: middle;
+
+                                .day {
+                                    font-size: 14px;
+                                    width: 65px;
+                                    text-align: center;
+                                    color: @themecolor;
+                                    float: left;
+
+                                    &.selected {
+                                        background: url("http://passport.shenyuan.org/WebResources/Default/images/open-class/selected.png") no-repeat 50px top;
+                                    }
+                                }
+                            }
+
+
+                            .time {
+                                width: 230px;
+                                font-size: 17px;
+                                color: @themecolor;
+                                display: inline-block;
+                                *display: inline;
+                                *zoom: 1;
+                                vertical-align: middle;
+                            }
+                        }
+
+                        .class-list-box {
+                            margin-top: 5px;
+
+                            li {
+                                color: @graydeepcolor;
+                                background: none;
+                                height: 40px;
+
+                                .class-name {
+                                    font-size: 18px;
+                                    float: left;
+                                    height: 40px;
+                                    line-height: 40px;
+
+                                    span {
+                                        font-size: 24px;
+                                        padding: 0 12px;
+                                    }
+                                }
+
+                                .date {
+                                    float: right;
+                                    font-size: 14px;
+                                    height: 40px;
+                                    line-height: 40px;
+                                    padding: 0 100px 0 0;
+                                }
+
+                                &:nth-child(2n+1) {
+                                    background: #e7e7e7;
+                                }
+                            }
+                        }
+
+                        .evaluate-box {
+                            .item {
+                                margin-bottom: 40px;
+                                border-bottom: 1px dotted @hrcolor;
+
+                                .head-pic {
+                                    width: 100px;
+                                    height: 100px;
+                                    margin: 0 15px 0 20px;
+                                    float: left;
+
+                                    img {
+                                        width: 100px;
+                                        height: 100px;
+                                    }
+                                }
+
+                                .content {
+                                    float: left;
+                                    position: relative;
+                                    width: 530px;
+
+
+                                    .name {
+                                        font-size: 24px;
+                                        font-weight: bold;
+                                    }
+
+                                    .text {
+                                        height: 50px;
+                                        line-height: 50px;
+                                        color: @graydeepcolor;
+                                        font-size: 12px;
+                                    }
+
+                                    .datetime {
+                                        position: absolute;
+                                        color: @graydeepcolor;
+                                        font-size: 14px;
+                                        top: 0;
+                                        right: 0;
+                                    }
+
+                                    .action {
+                                        width: 500px;
+                                        margin: 40px 0;
+
+                                        button {
+                                            width: 16px;
+                                            height: 16px;
+                                            background: url("http://passport.shenyuan.org/WebResources/Default/images/hand-action.png") no-repeat;
+                                            border: 0;
+                                            margin-right: 10px;
+
+                                            &.like {
+                                                background-position: 0 0;
+                                            }
+
+                                            &.down {
+                                                background-position: 0 -16px;
+                                            }
+                                        }
+
+                                        .button {
+                                            margin: 12px 15px 0 0;
+                                            float: right;
+                                        }
+
+                                        .text {
+                                            float: right;
+                                            color: @themecolor;
+                                            font-size: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .class-description {
+                            font-size: 14px;
+                            color: @graydeepcolor;
+                            text-indent: 30px;
+                        }
+                    }
+                }
+            }
+
+            .correlation {
+                margin: 50px 0 170px 0;
+
+                h4 {
+                    font-size: 18px;
+                    color: @themecolor;
+                    margin: 20px 0;
+                }
+
+                ul {
+                    li {
+                        float: left;
+                        margin-right: 20px;
+
+                        img {
+                            width: 190px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .right-box {
+            width: 215px;
+            float: left;
+
+            h3 {
+                font-size: 18px;
+                margin: auto;
+            }
+
+            h4 {
+                font-size: 18px;
+                color: @themecolor;
+                margin: 20px auto;
+            }
+
+            h5 {
+                background: url("http://passport.shenyuan.org/WebResources/Default/images/open-class/hot.png") no-repeat;
+                font-size: 18px;
+                height: 27px;
+                line-height: 27px;
+                padding: 0 0 0 30px;
+                margin: 0 0 20px 0;
+            }
+
+            .content {
+                font-size: 14px;
+                color: @graydeepcolor;
+                border-bottom: 1px solid @hrcolor;
+
+                div {
+                    height: 30px;
+                    line-height: 30px;
+                }
+
+                .action {
+                    height: 45px;
+                    line-height: 45px;
+                    margin: 20px 0;
+
+                    button {
+                        width: 120px;
+                        height: 50px;
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .consultation-telephone {
+                font-size: 14px;
+                color: @themecolor;
+                margin: 18px 0 25px 0;
+
+                span {
+                    font-size: 18px;
+                }
+            }
+
+            .class-list-box {
+                .class-item {
+                    margin-bottom: 10px;
+
+                    .class-img {
+                        float: left;
+                        width: 95px;
+                        height: 65px;
+                        margin-right: 6px;
+
+                        img {
+                            width: 95px;
+                            height: 65px;
+                        }
+                    }
+
+                    .class-desc {
+                        float: left;
+                        height: 65px;
+                        width: 108px;
+
+                        h6 {
+                            font-size: 12px;
+
+                            a {
+                                color: #000;
+                                text-decoration: none;
+                            }
+
+                            margin: 2px 0;
+                        }
+
+                        .appointment {
+                            font-size: 12px;
+                            background: url("http://passport.shenyuan.org/WebResources/Default/images/appointment.png") no-repeat;
+                            padding: 0 0 0 20px;
+                            height: 18px;
+                            line-height: 18px;
+
+                            span {
+                                font-size: 14px;
+                                color: @themecolor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .open-class-flow {
+        width: 100%;
+        height: 660px;
+        background: #2a2b2f;
+
+        .content {
+            width: 1024px;
+            margin: 0 auto;
+            padding: 30px 0 0 0;
+            color: #fff;
+
+            .title {
+                border-bottom: 1px solid #fff;
+                height: 73px;
+                width: 180px;
+                margin: 0 auto;
+
+                h2 {
+                    font-size: 24px;
+                    border-bottom: 1px solid #fff;
+                    height: 71px;
+                    line-height: 70px;
+                    width: 180px;
+                    position: relative;
+                    text-align: center;
+                }
+            }
+
+            .title-desc {
+                width: 770px;
+                margin: 90px auto 50px auto;
+            }
+
+            .description {
+                font-size: 18px;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 100px;
+            }
+
+            ul {
+                height: 86px;
+
+                &.flow {
+                    li {
+                        float: left;
+                        margin-right: 65px;
+                        height: 84px;
+                        padding: 0;
+
+                        &.full {
+                            margin: auto;
+                        }
+
+                        .wrap-text {
+                            width: 150px;
+                            padding: 12px 0;
+                            top: 0;
+                            position: relative;
+                            border-top: 1px solid #fff;
+                            border-bottom: 1px solid #fff;
+                        }
+
+                        .text {
+                            text-align: center;
+                            font-size: 14px;
+                            line-height: 50px;
+                            width: 150px;
+                            height: 50px;
+
+                            &.multiple {
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #scheduleBox.reveal-modal {
+        width: 500px;
+        margin-left: -250px;
+        top: 100px;
+        visibility: visible;
+
+        .schedule {
+            dl {
+                width: 430px;
+                margin: 0 auto;
+                padding: 30px 0 15px 0;
+
+                dd {
+                    margin-bottom: 10px;
+
+                    input {
+                        height: 50px;
+                        line-height: 50px;
+                        font-size: 14px;
+                        padding-left: 10px;
+                        width: 135px;
+                    }
+
+                    .schedule-phone {
+                        float: left;
+                        height: 50px;
+                        margin-right: 10px;
+
+                        input {
+                            width: 225px;
+                        }
+                    }
+
+                    .action {
+                        float: left;
+                        height: 50px;
+
+                        button {
+                            width: 135px;
+                        }
+                    }
+
+                    button {
+                        height: 50px;
+                        font-size: 18px;
+                        width: 225px;
+                    }
+                }
+            }
+        }
+
+        .message {
+            display: block;
+            font-size: 18px;
+            text-align: center;
+            padding: 70px 0;
+
+            span {
+                font-weight: bold;
+                color: @themecolor;
+            }
+
+            .speaker-img {
+                display: inline-block;
+                *display: inline;
+                *zoom: 1;
+                padding-left: 15px;
+                img{
+                    .border-radius(50%)
+                }
+            }
+        }
+    }
+}
+#scheduleBox.reveal-modal {
+    width: 500px;
+    margin-left: -250px;
+
+    .schedule {
+        dl {
+            width: 430px;
+            margin: 0 auto;
+            padding: 30px 0 15px 0;
+
+            dd {
+                margin-bottom: 10px;
+
+                input {
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    width: 135px;
+                }
+
+                .schedule-phone {
+                    float: left;
+                    height: 50px;
+                    margin-right: 10px;
+
+                    input {
+                        width: 225px;
+                    }
+                }
+
+                .action {
+                    float: left;
+                    height: 50px;
+
+                    button {
+                        width: 135px;
+                    }
+                }
+
+                button {
+                    height: 50px;
+                    font-size: 18px;
+                    width: 225px;
+                }
+            }
+        }
+    }
+
+    .message {
+        display: block;
+        font-size: 18px;
+        text-align: center;
+        padding: 70px 0;
+
+        span {
+            font-weight: bold;
+            color: @themecolor;
+        }
+
+        .speaker-img {
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            padding-left: 15px;
+            img{
+                .border-radius(50%)
+            }
+        }
+    }
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    .transparent-bgcolor();
+    z-index: 1300;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+.reveal-modal {
+    visibility: hidden;
+    top: 100px;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px;
+    background: #fff;
+    position: fixed;
+    z-index: 1301;
+
+    input, button {
+        display: block;
+    }
+
+    .close-reveal-modal {
+        cursor: pointer;
+        background: url('http://passport.shenyuan.org/WebResources/Default/images/reveal-modal-close.png') no-repeat center center;
+        .transition(all 0.3s ease-in-out);
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        top: 12.5px;
+        right: 20px;
+        display: block;
+    }
+
+    h3 {
+        height: 50px;
+        line-height: 50px;
+        font-size: 18px;
+        margin: auto;
+        background: @themecolor;
+        color: #fff;
+        padding: 0 0 0 20px;
+    }
+
+    &.show {
+        &.reveal-modal {
+            .close-reveal-modal {
+                display: block;
+            }
+
+            input, button {
+                display: block;
+            }
+        }
+    }
+}

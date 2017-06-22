@@ -1,0 +1,6 @@
+{
+  "name": "SendAjax",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SendAjax.js"
+}

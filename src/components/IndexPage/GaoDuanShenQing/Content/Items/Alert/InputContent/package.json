@@ -1,0 +1,6 @@
+{
+  "name": "InputContent",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./InputContent.js"
+}

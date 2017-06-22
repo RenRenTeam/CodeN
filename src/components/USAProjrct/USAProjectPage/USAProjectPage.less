@@ -1,0 +1,310 @@
+@import "../../themecolor.less";
+@import "../../function.less";
+html {
+        height: 100%;
+        width: 100%;
+        body {
+                height: 100%;
+                width: 100%;
+                .table-hover-sd-color{
+                    background-color: #fff799;
+                    .transition(0.3s);
+                }
+                .contaniner_Deail {
+                        width: 1024px;
+                        position: relative;
+                        margin: 66px auto;
+                        .hide_bxosadasdx{
+                            display: none;
+                        }
+                        .college-filter-box {
+                                .college-filter-options {
+                                        position: relative;
+                                        padding: 5px 10px 0 10px;
+                                        &:after {
+                                                content: " ";
+                                                display: block;
+                                                clear: both;
+                                                height: 0;
+                                                visibility: hidden;
+                                        }
+                                        &.filter-hide {
+                                                display: none;
+                                        }
+                                        &.more {
+                                                padding: 10px 10px 0 10px;
+                                                background: #eae7e7;
+                                                margin-bottom: 2px;
+                                                border: 1px dashed @hrcolor;
+                                                height: 45px;
+                                                overflow: hidden;
+                                                .transition();
+                                                &.show {
+                                                        height: auto;
+                                                }
+                                                .college-filter-ext {
+                                                        top: 16px;
+                                                }
+                                        }
+                                        &.multiple {
+                                                padding: 10px 10px 0 10px;
+                                                background: #eae7e7;
+                                                border: 1px dashed @hrcolor;
+                                                margin-bottom: 2px;
+                                                .college-filter-btns {
+                                                        display: block;
+                                                }
+                                                .college-filter-list {
+                                                        li {
+                                                                &.active {
+                                                                        background: none;
+                                                                        &.all {
+                                                                                background: none;
+                                                                                a {
+                                                                                        color: #000;
+                                                                                }
+                                                                        }
+                                                                        a {
+                                                                                color: #000;
+                                                                                i {
+                                                                                        background-position: 0 -24px;
+                                                                                }
+                                                                        }
+                                                                }
+                                                                &:hover {
+                                                                        a {
+                                                                                i {
+                                                                                        background-position: 0 -12px;
+                                                                                }
+                                                                        }
+                                                                        &.active {
+                                                                                a {
+                                                                                        i {
+                                                                                                background-position: 0 -24px;
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                        .title {
+                                                float: left;
+                                                font-size: 18px;
+                                                line-height: 25px;
+                                                width: 95px;
+                                        }
+                                        .college-filter-list {
+                                                margin-left: 100px;
+                                                padding-right: 75px;
+                                                &:after {
+                                                        content: " ";
+                                                        display: block;
+                                                        clear: both;
+                                                        height: 0;
+                                                        visibility: hidden;
+                                                }
+                                                li {
+                                                        float: left;
+                                                        font-size: 14px;
+                                                        height: 25px;
+                                                        line-height: 25px;
+                                                        margin: 0 10px 4px 0;
+                                                        .transition(all 0.2s ease-in-out);
+                                                        &.active {
+                                                                background: #f6b37f;
+                                                                a {
+                                                                        color: #fff;
+                                                                }
+                                                        }
+                                                        a {
+                                                                display: block;
+                                                                padding: 0 8px;
+                                                                color: #000;
+                                                                text-decoration: none;
+                                                                cursor: pointer;
+                                                        }
+                                                        input {
+                                                                width: 100px;
+                                                                .border-radius();
+                                                                padding: 0 5px;
+                                                                height: 25px;
+                                                                line-height: 25px;
+                                                                &.number {
+                                                                        text-align: center;
+                                                                        width: 60px;
+                                                                }
+                                                                &.name {
+                                                                        width: 200px;
+                                                                        font-size: 14px;
+                                                                }
+                                                        }
+                                                        em {
+                                                                margin: 0 10px;
+                                                        }
+                                                        button.button-confirm {
+                                                                width: 60px;
+                                                                border: 0;
+                                                                background: #f6b37f;
+                                                                color: #fff;
+                                                                margin-left: 10px;
+                                                        }
+                                                        .control {
+                                                                float: left;
+                                                                width: 150px;
+                                                                height: 25px;
+                                                                margin-right: 10px;
+                                                                select {
+                                                                        height: 25px;
+                                                                }
+                                                                button.button-confirm {
+                                                                        margin-top: 2px;
+                                                                }
+                                                                .bootstrap-select {
+                                                                        height: 25px;
+                                                                        &.open {
+                                                                                .btn-default {
+                                                                                        &.dropdown-toggle {
+                                                                                                border-color: @themecolor;
+                                                                                                color: @themecolor;
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                        .btn-default {
+                                                                                &.dropdown-toggle {
+                                                                                        background: #fff;
+                                                                                        border: 1px solid #ccc;
+                                                                                        .border-radius();
+                                                                                        height: 25px;
+                                                                                        font-size: 14px;
+                                                                                        text-align: center;
+                                                                                        &:before {
+                                                                                                border: 0;
+                                                                                        }
+                                                                                        .filter-option {
+                                                                                                text-align: center;
+                                                                                                width: auto;
+                                                                                                height: 25px;
+                                                                                                line-height: 25px;
+                                                                                                margin-top: -8px;
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                        .dropdown-menu {
+                                                                                li {
+                                                                                        float: none;
+                                                                                        margin: auto;
+                                                                                        &.active {
+                                                                                                background: none;
+                                                                                                a {
+                                                                                                        color: #000;
+                                                                                                }
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                }
+                                                        }
+                                                }
+                                        }
+                                        .college-filter-btns {
+                                                display: none;
+                                                text-align: center;
+                                                margin-bottom: 15px;
+                                                button {
+                                                        width: 60px;
+                                                        height: 25px;
+                                                        .border-radius();
+                                                }
+                                        }
+                                        .college-filter-ext {
+                                                position: absolute;
+                                                top: 14px;
+                                                right: 30px;
+                                                .college-options-multiple {
+                                                        color: @themecolor;
+                                                        text-decoration: none;
+                                                        font-size: 15px;
+                                                }
+                                        }
+                                }
+                        }
+                }
+               table{
+                        overflow: hidden;
+                }
+                table td {
+                        margin: 0;
+                        padding: 0;
+                }
+                .bigDv {
+                        margin-top: 16px;
+                        .tr_tHeader {
+                                background-color: @themecolor;
+                                color: #fff;
+                                font-weight: 600;
+                                height: 65px;
+                                td {
+                                        border: 1px solid #00a9f3;
+                                        border-right: medium none;
+                                }
+                                .t1{
+                                        width: 5%;
+                                }
+                                .t2{
+                                        width: 20%;
+                                }
+                                .t3{
+                                        width: 10%;
+                                }
+                        }
+                        .name{
+                            padding-left: 15px;
+                            text-align: left;
+                            padding-right: 15px
+                        }
+                        .hide_bxox{
+                                display: none;
+                        }
+                        .as_table{
+                                width: 30%;
+                        }
+                        .as_table_A{
+                                width: 10%;
+                        }
+                        .as_table_B{ 
+                                width: 10%;
+                        }
+                        .as_table_C{
+                                width: 10%;
+
+                        }
+                        td {
+                                font-size: 12px;
+                                font-weight: 600;
+                                text-align: center;
+                                border: 2px solid #d7d7d7;
+                                &.xuhao{
+                                    font-size: 14px;
+                                }
+                                .noBrder_table {
+                                        width: 100%;
+                                        height: 65px;
+                                        td {
+                                                border-bottom: medium none;
+                                        }
+                                }
+                                &.last_td {
+
+                                }
+                                &.smallSiza {
+                                        font-size: 12px;
+                                }
+                                a{
+                                    color: @themecolor;
+                                    p{
+                                    }
+                                }
+                        }
+                }
+        }
+}

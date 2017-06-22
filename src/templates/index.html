@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%- title %></title>
+    <meta name="description" content="<%- description %>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./ref.css" type="text/css" />
+    <style id="css"><%= css %></style>
+    <script type="text/javascript">
+
+    function IsPC() {
+        var userAgentInfo = navigator.userAgent;
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");
+        var flag = true;
+        for (var v = 0; v < Agents.length; v++) {
+            if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }
+        }
+        return flag;
+    }
+
+
+
+    if(!IsPC()){
+      window.location.href = "http://one.rrliuxue.com";
+    }
+
+
+    function browserVension(){
+         var browser = navigator.appName;
+         var b_version = navigator.appVersion;
+         var version = b_version.split(";");
+         if (version.length > 1) {
+             var trim_Version = parseInt(version[1].replace(/[ ]/g, "").replace(/MSIE/g, ""));
+             return trim_Version;
+         }else{
+            return 10;
+         }
+    }
+    var v = browserVension();
+
+    if (v < 10) {
+      location.href = "http://passport.shenyuan.org/update.html";
+    }
+    </script>
+  </head>
+  <body>
+
+    <div id="components-modal-demo-basic"></div>
+    <div id="app"><%= body %></div>
+    <div style="display:none;">
+        <script type="text/javascript">      var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cspan id='cnzz_stat_icon_1254529092'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1254529092%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+    </div>
+    <script type="text/javascript">
+    var global = {
+      msg:"人人留学",
+      cr : "© Copyright 2015 www.rrliuxue.com",
+      host:"http://localhost:3000/"
+      //正式环境
+      //host:"http://node.rrliuxue.com/"
+    }
+    </script>
+
+    <script src="/app.js"></script>
+    <script type="text/javascript" src="./JSXTransformer.js"></script>
+    <script type="text/javascript" src="./all.js"></script>
+    <script type="text/javascript" src="./antd.js"></script>
+    <script type="text/javascript" src="./jquery.min.js"></script>
+    <script type="text/javascript" src="./flavr.min.js"></script>
+    <script type="text/javascript" src="./jquery.fullPage.min.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "SetpB",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SetpB.js",
+  "dependencies": {
+    "immutable": "^3.7.4"
+  }
+}

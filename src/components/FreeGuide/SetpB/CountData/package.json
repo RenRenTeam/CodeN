@@ -1,0 +1,6 @@
+{
+  "name": "CountData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CountData.js"
+}

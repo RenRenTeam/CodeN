@@ -1,0 +1,6 @@
+{
+  "name": "AUS_IBT",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./AUS_IBT.js"
+}

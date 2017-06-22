@@ -1,0 +1,6 @@
+{
+  "name": "WishPage",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./WishPage.js"
+}

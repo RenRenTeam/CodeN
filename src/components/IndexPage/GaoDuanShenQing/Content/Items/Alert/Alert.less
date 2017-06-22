@@ -1,0 +1,213 @@
+@import '../../../../../themecolor.less';
+@import "../../../../../function.less";
+@import "../../../../../reveal-modal.less";
+
+.tabs-box {
+    &.tabs-line {
+        .tabs {
+            position:relative;
+            z-index:2;
+            height: 46px;
+            top:3px;
+            .item {
+                border-top: 3px solid #fff;
+                border-left: 3px solid #fff;
+                border-right: 3px solid #fff;
+                border-bottom: 0;
+                background: #fff;
+                float: left;
+                height:43px;
+                line-height:43px;
+                padding:0 20px;
+                .transition(all 0.2s ease-in-out);
+                cursor:pointer;
+                font-size:18px;
+                &.selected {
+                    border-color: @themecolor;
+                    height: 46px;
+                }
+            }
+        }
+
+        .tab-content {
+            border-top: 3px solid @themecolor;
+            position:relative;
+            z-index:1;
+        }
+    }
+}
+#expertBox.reveal-modal {
+    width: 750px;
+    margin-left: -375px;
+
+    .content {
+      width: 680px;
+      margin: 0 auto;
+      padding: 15px 0;
+
+      .expert-box {
+        margin-bottom: 30px;
+
+        .expert-img-box {
+          float: left;
+          width: 106px;
+          margin: 4px 30px 0 0;
+
+          .expert-img {
+            width: 106px;
+            border: 3px solid @themecolor;
+            img {
+              width: 100px;
+            }
+          }
+        }
+
+        .expert-info {
+          width: 540px;
+          float: left;
+
+          .info, .speciality {
+            font-size: 12px;
+            color: @graydeepcolor;
+
+            .t {
+              color: #000;
+              font-size: 14px;
+            }
+
+            .name {
+              float: left;
+              margin-right: 15px;
+            }
+
+            .star {
+              float: left;
+            }
+
+            .number {
+              color: @themecolor;
+              font-size: 18px;
+            }
+          }
+        }
+
+        .teach-box {
+
+          h5 {
+            color: #000;
+            font-size: 14px;
+          }
+
+          .abroad, .inland {
+            float: left;
+            width: 260px;
+
+            .desc {
+              font-size: 12px;
+              color: @graydeepcolor;
+            }
+          }
+
+          .abroad {
+            margin-right: 10px;
+          }
+        }
+      }
+
+      .expert-form {
+        &.tabs-box {
+          .tabs {
+            .item {
+              font-size: 18px;
+            }
+          }
+
+          .tab-content {
+            .expert-content {
+              width: 640px;
+              margin: 0 auto;
+              padding: 20px 0 0 0;
+
+              &#intro {
+                font-size: 12px;
+                color: @graydeepcolor;
+                margin-bottom: 90px;
+              }
+
+              &#schedule {
+                textarea, input {
+                  width: 100%;
+                  font-size: 14px;
+                  padding: 0 10px;
+                }
+
+                textarea {
+                  padding: 5px 10px;
+                  height: 70px;
+                }
+
+                input {
+                  height: 40px;
+                  width: 310px;
+                  line-height: 40px;
+                }
+
+                button {
+                  height: 40px;
+                  font-size: 18px;
+                  width: 130px;
+                }
+
+                dl {
+                  dd {
+                    &.content-region {
+                    }
+
+                    &.name-region {
+                      float: left;
+                      margin-right: 20px;
+                    }
+
+                    &.email-region {
+                      float: left;
+                    }
+
+                    &.phone-region {
+                      float: left;
+                      margin-right: 20px;
+                    }
+
+                    &.getcode {
+                      float: left;
+                    }
+
+                    &.code-region {
+                      input {
+                        width: 150px;
+                      }
+                    }
+                  }
+
+                  &.action {
+                    width: 135px;
+                    margin: 0 auto;
+                  }
+                }
+
+                .message {
+                  display: none;
+                  text-align: center;
+                  padding: 70px 0;
+                  font-size: 18px;
+
+                  span {
+                    color: @themecolor;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }

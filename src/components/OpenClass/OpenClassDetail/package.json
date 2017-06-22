@@ -1,0 +1,6 @@
+{
+    "name": "OpenClassDetail",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./OpenClassDetail.js"
+}

@@ -1,0 +1,527 @@
+﻿html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden !important;
+}
+html body #app {
+  height: 100%;
+}
+html body #superContainer {
+  height: 100%;
+  position: relative;
+  /* Touch detection for Windows 8 */
+  -ms-touch-action: none;
+  /* IE 11 on Windows Phone 8.1*/
+  touch-action: none;
+}
+html body .fp-section {
+  position: relative;
+  -webkit-box-sizing: border-box;
+  /* Safari<=5 Android<=3 */
+  -moz-box-sizing: border-box;
+  /* <=28 */
+  box-sizing: border-box;
+}
+html body .fp-slide {
+  float: left;
+}
+html body .fp-slide,
+html body .fp-slidesContainer {
+  height: 100%;
+  display: block;
+}
+html body .fp-slides {
+  z-index: 1;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;
+  /* Safari<=6 Android<=4.3 */
+  transition: all 0.3s ease-out;
+}
+html body .fp-section.fp-table,
+html body .fp-slide.fp-table {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+html body .fp-tableCell {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+}
+html body .fp-slidesContainer {
+  float: left;
+  position: relative;
+}
+html body .fp-controlArrow {
+  position: absolute;
+  z-index: 4;
+  top: 50%;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  margin-top: -38px;
+}
+html body .fp-controlArrow.fp-prev {
+  left: 15px;
+  width: 0;
+  border-width: 38.5px 34px 38.5px 0;
+  border-color: transparent #fff transparent transparent;
+}
+html body .fp-controlArrow.fp-next {
+  right: 15px;
+  border-width: 38.5px 0 38.5px 34px;
+  border-color: transparent transparent transparent #fff;
+}
+html body .fp-scrollable {
+  overflow: scroll;
+}
+html body .fp-notransition {
+  -webkit-transition: none !important;
+  transition: none !important;
+}
+html body #fp-nav {
+  position: fixed;
+  z-index: 100;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+}
+html body #fp-nav.right {
+  right: 17px;
+}
+html body #fp-nav.left {
+  left: 17px;
+}
+html body .fp-slidesNav {
+  position: absolute;
+  z-index: 4;
+  left: 50%;
+  opacity: 1;
+}
+html body .fp-slidesNav.bottom {
+  bottom: 17px;
+}
+html body .fp-slidesNav.top {
+  top: 17px;
+}
+html body #fp-nav ul,
+html body .fp-slidesNav ul {
+  margin: 0;
+  padding: 0;
+}
+html body #fp-nav ul li,
+html body .fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+html body .fp-slidesNav ul li {
+  display: inline-block;
+}
+html body #fp-nav ul li a,
+html body .fp-slidesNav ul li a {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+}
+html body #fp-nav ul li a.active span,
+html body .fp-slidesNav ul li a.active span {
+  background: #333;
+}
+html body #fp-nav ul li a span,
+html body .fp-slidesNav ul li a span {
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #000;
+  background: rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 1;
+}
+html body #fp-nav ul li .fp-tooltip {
+  position: absolute;
+  top: -2px;
+  color: #fff;
+  font-size: 14px;
+  font-family: arial, helvetica, sans-serif;
+  white-space: nowrap;
+  max-width: 220px;
+  overflow: hidden;
+  display: block;
+  opacity: 0;
+  width: 0;
+}
+html body #fp-nav ul li:hover .fp-tooltip {
+  -webkit-transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s ease-in;
+  width: auto;
+  opacity: 1;
+}
+html body #fp-nav ul li .fp-tooltip.right {
+  right: 20px;
+}
+html body #fp-nav ul li .fp-tooltip.left {
+  left: 20px;
+}
+html body .usaProject_Node {
+  height: 100%;
+  width: 100%;
+}
+html body .usaProject_Node .co_Content {
+  width: 1110px;
+  margin: 0 auto;
+  position: relative;
+  height: 100%;
+}
+html body .usaProject_Node #partOne {
+  background-color: #49c4fa;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+html body .usaProject_Node #partOne .co_Content .index_Left {
+  float: left;
+  width: 37%;
+  position: absolute;
+  bottom: 320px;
+  left: 0;
+}
+html body .usaProject_Node #partOne .co_Content .index_right {
+  float: right;
+  width: 61%;
+  position: relative;
+  top: 15%;
+}
+html body .usaProject_Node #partTwo {
+  background-color: #fff;
+  padding: 100px 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+html body .usaProject_Node #partTwo .p2_left {
+  float: left;
+  width: 70%;
+  top: 16%;
+  position: relative;
+}
+html body .usaProject_Node #partTwo .p2_right {
+  float: left;
+  width: 20%;
+  margin-left: 0%;
+  margin-top: 17%;
+}
+html body .usaProject_Node #partThree {
+  background-color: #ebebeb;
+  padding-bottom: 100px ;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+html body .usaProject_Node #partThree .co_Content {
+  text-align: center;
+}
+html body .usaProject_Node #partThree .co_Content .icon {
+  float: left;
+  width: 30%;
+  margin-top: 100px;
+}
+html body .usaProject_Node #partThree .co_Content .icon.icon2,
+html body .usaProject_Node #partThree .co_Content .icon.icon4 {
+  margin-left: 40%;
+}
+html body .usaProject_Node #partThree .co_Content .notice {
+  position: relative;
+  margin-top: 80px;
+  width: 80%;
+}
+html body .usaProject_Node #partThree .co_Content .buttonDv {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+html body .usaProject_Node #partThree .co_Content .buttonDv .button-normal-dv {
+  width: 40%;
+  height: 80px;
+  font-size: 24px;
+  background-color: transparent;
+  border: 1px solid #49c4fa;
+  color: #49c4fa;
+  box-shadow: none;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+html body .usaProject_Node #partThree .co_Content .buttonDv .button-normal-dv.one {
+  margin-right: 20%;
+}
+html body .usaProject_Node #partThree .co_Content .buttonDv .button-normal-dv:hover {
+  background-color: #49c4fa;
+  border: 1px solid #49c4fa;
+  color: #fff;
+}
+html body .contaniner_Deail {
+  width: 1024px;
+  position: relative;
+  margin: 66px auto;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options {
+  position: relative;
+  padding: 5px 10px 0 10px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.filter-hide {
+  display: none;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.more {
+  padding: 10px 10px 0 10px;
+  background: #eae7e7;
+  margin-bottom: 2px;
+  border: 1px dashed #cccccc;
+  height: 45px;
+  overflow: hidden;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.more.show {
+  height: auto;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.more .college-filter-ext {
+  top: 16px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple {
+  padding: 10px 10px 0 10px;
+  background: #eae7e7;
+  border: 1px dashed #cccccc;
+  margin-bottom: 2px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-btns {
+  display: block;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li.active {
+  background: none;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li.active.all {
+  background: none;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li.active.all a {
+  color: #000;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li.active a {
+  color: #000;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li.active a i {
+  background-position: 0 -24px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li:hover a i {
+  background-position: 0 -12px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options.multiple .college-filter-list li:hover.active a i {
+  background-position: 0 -24px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .title {
+  float: left;
+  font-size: 18px;
+  line-height: 25px;
+  width: 95px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list {
+  margin-left: 100px;
+  padding-right: 75px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list:after {
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li {
+  float: left;
+  font-size: 14px;
+  height: 25px;
+  line-height: 25px;
+  margin: 0 10px 4px 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li.active {
+  background: #f6b37f;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li.active a {
+  color: #fff;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li a {
+  display: block;
+  padding: 0 8px;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li input {
+  width: 100px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  padding: 0 5px;
+  height: 25px;
+  line-height: 25px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li input.number {
+  text-align: center;
+  width: 60px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li input.name {
+  width: 200px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li em {
+  margin: 0 10px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li button.button-confirm {
+  width: 60px;
+  border: 0;
+  background: #f6b37f;
+  color: #fff;
+  margin-left: 10px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control {
+  float: left;
+  width: 150px;
+  height: 25px;
+  margin-right: 10px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control select {
+  height: 25px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control button.button-confirm {
+  margin-top: 2px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select {
+  height: 25px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select.open .btn-default.dropdown-toggle {
+  border-color: #49c4fa;
+  color: #49c4fa;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select .btn-default.dropdown-toggle {
+  background: #fff;
+  border: 1px solid #ccc;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+  height: 25px;
+  font-size: 14px;
+  text-align: center;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select .btn-default.dropdown-toggle:before {
+  border: 0;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select .btn-default.dropdown-toggle .filter-option {
+  text-align: center;
+  width: auto;
+  height: 25px;
+  line-height: 25px;
+  margin-top: -8px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select .dropdown-menu li {
+  float: none;
+  margin: auto;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select .dropdown-menu li.active {
+  background: none;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-list li .control .bootstrap-select .dropdown-menu li.active a {
+  color: #000;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-btns {
+  display: none;
+  text-align: center;
+  margin-bottom: 15px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-btns button {
+  width: 60px;
+  height: 25px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-ext {
+  position: absolute;
+  top: 14px;
+  right: 30px;
+}
+html body .contaniner_Deail .college-filter-box .college-filter-options .college-filter-ext .college-options-multiple {
+  color: #49c4fa;
+  text-decoration: none;
+  font-size: 15px;
+}
+html body table td {
+  margin: 0;
+  padding: 0;
+}
+html body .bigDv {
+  margin-top: 16px;
+}
+html body .bigDv .tr_tHeader {
+  background-color: #49c4fa;
+  color: #fff;
+  font-weight: 600;
+  height: 65px;
+}
+html body .bigDv .tr_tHeader td {
+  border: 1px solid #00a9f3;
+  border-right: medium none;
+}
+html body .bigDv td {
+  width: 117px;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  border-left: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
+  border-right: medium none;
+}
+html body .bigDv td .noBrder_table {
+  width: 100%;
+  height: 65px;
+}
+html body .bigDv td .noBrder_table td {
+  border-bottom: medium none;
+}
+html body .bigDv td.last_td {
+  border-right: 1px solid #d7d7d7;
+}
+html body .bigDv td.smallSiza {
+  font-size: 14px;
+}

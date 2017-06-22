@@ -1,0 +1,6 @@
+{
+  "name": "TotalCollegeCount",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./TotalCollegeCount.js"
+}

@@ -1,0 +1,2639 @@
+@import "../../../themecolor.less";
+@import "../../../function.less";
+@import "../../../antdModel.less";
+html{
+	body{
+		#zhidingliuxuejkihua{
+			margin-left: -34px;
+			width: 90px;
+		}
+		.banLiLiuCheng {
+		    width: 1024px;
+		    margin: 0 auto;
+		    position: relative;
+		    margin-bottom: 110px;
+		    height: 510px;
+			
+		    h1 {
+		        font-size: 24px;
+		        text-align: center;
+		    }
+
+		    .titleFont {
+		        text-align: center;
+		        margin-top: 50px;
+
+		        span {
+		            font-size: 18px;
+		            color: #000;
+		        }
+
+		        .item {
+		            font-size: 14px;
+		            color: @themecolor;
+		            .border-radius(5px);
+		            .transition(all 0.5s ease);
+		            padding: 5px 10px;
+		            border: 2px solid #fff;
+
+		            &.active {
+		                color: #fff;
+		                background-color: @themecolor;
+		            }
+
+		            &:hover {
+		                cursor: pointer;
+		                border: 2px solid @themecolor;
+		            }
+		        }
+
+		        .tTitlea {
+		            margin-right: 15px;
+		        }
+		    }
+
+		    .itBigDv {
+		        position:absolute;
+
+		        &#yuyanSchool{
+		            display: block;
+		        }
+
+		        .blueLine {
+		            background-color: #49c4fa;
+		            height: 1px;
+		            position: relative;
+		            top: 169px;
+		            width: 1024px;
+		            right: 18px;
+		        }
+
+		        .banLiLiuChengContent {
+		            width: 1024px;
+		            margin-top: 40px;
+		            position: relative;
+		            z-index: 16;
+
+		            .itemImgDv {
+		                margin-right: 50px;
+		                float: left;
+		                text-align: center;
+		                font-size: 18px;
+
+		                .imgItem {
+		                    .transition();
+		                    .transform(scale(0.8,0.8));
+		                }
+
+		                div {
+		                    .transform(scale(0.8,0.8));
+		                    .transition();
+		                }
+
+		                .bluePoint {
+		                    background-color: @themecolor;
+		                    border-radius: 12px;
+		                    height: 12px;
+		                    margin: 13px auto 0;
+		                    width: 12px;
+		                }
+
+		                .blackPoint {
+		                    .transition();
+		                    width: 0;
+		                }
+
+		                &.full {
+		                    margin-right: 0;
+		                }
+
+		                &:hover {
+		                    .imgItem {
+		                        .transform(scale(1,1));
+		                        cursor: pointer;
+		                    }
+
+		                    div {
+		                        font-weight: 600;
+		                        .transform(scale(1,1));
+		                    }
+
+		                    .bluePoint {
+		                        background-color: #000;
+		                    }
+
+		                    .blackPoint {
+		                        width: 12px;
+		                    }
+		                }
+
+		                &.active {
+		                    .imgItem {
+		                        .transform(scale(1,1));
+		                        cursor: pointer;
+		                    }
+
+		                    div {
+		                        font-weight: 600;
+		                        .transform(scale(1,1));
+		                    }
+
+		                    .bluePoint {
+		                        background-color: #000;
+		                    }
+
+		                    .blackPoint {
+		                        width: 12px;
+		                    }
+		                }
+		            }
+		        }
+
+		        .followLine {
+		            /*background-color: @themecolor;*/
+		            height: 2px;
+		            width: 1024px;
+		            position: relative;
+		            z-index: 17;
+		            top: -6px;
+
+		            &.daxue_Follow{
+		                left:14px;
+		                .linXingjieji{
+		                    margin-left:505px;
+		                }
+		            }
+
+		            &.daxueyuan_Follow{
+		                .font{
+		                    width:70px !important;
+		                    margin-left:-28px !important;
+		                }
+		            }
+
+		            &.jpHigh_Follow{
+		                left:224px;
+		                .dvLinxing{
+		                    left:0;
+		                    .linXing2{
+		                        margin-left:379px;
+		                    }
+		                    .linXingjieji{
+		                        margin-left: 246px;
+		                    }
+		                }
+		            }
+
+		            &.zhuangmen_Follow{
+		                .dvLinxing{
+		                    left:360px;
+
+		                    .linXingjieji{
+		                        margin-left: 373px;
+		                    }
+		                }
+		            }
+
+		            .borderLeft {
+		                height: 250px;
+		                background-color: rgb(0, 0, 0);
+		                position: absolute;
+		                top: 0;
+		                width: 2px;
+		            }
+
+		            .linXing {
+		                float: left;
+		                margin-left: 115px;
+
+		                img {
+		                    .animation(linXing1 1.5s ease-in infinite);
+		                }
+
+		                &.full {
+		                    margin-left: 0;
+		                }
+
+		                &.linXing2 {
+		                    img {
+		                        .animation(linXing2 1.5s ease-in infinite);
+		                    }
+		                }
+
+		                .font {
+		                    position: absolute;
+		                    width: 60px;
+		                    .opacity(0);
+		                    .transition(0.4s);
+		                    .transform(rotate(0));
+		                    margin-left: -18px;
+		                    &.tuofu{
+							    width: 180px;
+								margin-left: -82px;
+							}
+							
+							&.zhifu{
+							    width: 90px;
+			   					 margin-left: -34px;
+							}
+		                }
+
+		                a {
+		                    color: @themecolor;
+		                    text-decoration: none;
+
+		                    &:hover {
+		                        text-decoration: none;
+		                    }
+		                }
+
+		                &:hover {
+
+
+		                    .font {
+		                        .transform(rotate(360));
+		                        .opacity(1);
+		                    }
+		                }
+		            }
+
+		            .dvLinxing {
+		                position: absolute;
+		                left: 100px;
+		                top: -11px;
+		            }
+		        }
+
+		        .mainPart {
+		            height: 21px;
+		            left: 35px;
+		            position: relative;
+		            width: 920px;
+
+		            .line_h {
+		                width: 497px;
+		                position: absolute;
+		                right: 0;
+
+		                .itemDv {
+		                    float: left;
+		                    margin-left: 109px;
+		                    position: relative;
+		                    margin-top: -1px;
+
+		                    .item {
+		                        .i {
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharpDown.png") no-repeat;
+		                            width: 12px;
+		                            height: 6px;
+		                            display: block;
+		                        }
+		                    }
+
+		                    &.itemDvA {
+		                        margin-left: 0;
+		                    }
+
+		                    &.itemDvB {
+		                    }
+
+		                    &.itemDvC {
+		                    }
+
+		                    &.itemDvD {
+		                    }
+		                }
+		            }
+
+		            .line_Font {
+		                position: absolute;
+		                right: 0;
+		                width: 537px;
+		                top: 30px;
+
+		                .itemDv {
+		                    float: left;
+		                    margin-left: 109px;
+
+		                    &.itemDvA {
+		                        margin-left: 0;
+		                    }
+
+		                    &.itemDvB {
+		                        margin-left: 25px;
+		                    }
+
+		                    &.itemDvC {
+		                        margin-left: 57px;
+		                    }
+
+		                    &.itemDvD {
+		                        margin-left: 61px;
+		                    }
+
+		                    &.itemDvE {
+		                        margin-left: 44px;
+		                    }
+		                }
+		            }
+
+		            .mainBgPart {
+		                position: relative;
+		                margin: 0 auto;
+		                top: 40px;
+
+		                .online {
+		                    position: absolute;
+		                    right: 851px;
+		                    display:block; visibility:visible
+		                }
+
+		                .choose {
+		                    position: absolute;
+		                    right: 721px;
+		                }
+
+		                .qianYue {
+		                    position: absolute;
+		                    right: 590px;
+		                }
+
+		                .caiLiao {
+		                    position: absolute;
+		                    right: 460px;
+		                }
+						.get{
+							position: absolute;
+		                    right: 279px;
+						}
+		               .qianZheng {
+		                    position: absolute;
+		                    right: 199px;
+		                }
+
+		                .toSchool {
+		                    position: absolute;
+		                    right: 68px;
+		                }
+
+		                .inSchool {
+		                    position: absolute;
+		                    right: -62px;
+		                }
+
+		                .line_MainFont {
+		                    position: relative;
+		                    height: 920px;
+		                    width: 124px;
+		                }
+
+		                .newItemDv {
+		                    width: 124px;
+
+		                    .newItem {
+		                        background-color: #000 !important;
+		                        .border-radius(5px);
+		                        color: #fff;
+		                        font-size: 13px;
+		                        text-align: center;
+		                        padding: 5px 20px;
+		                        margin-top: 15px;
+		                        position: relative;
+		                        z-index: 11;
+		                        visibility: hidden;
+
+		                        &.hoverColor {
+		                            background-color: @themecolor !important;
+		                            .transition-delay(0s) !important;
+		                            cursor: pointer;
+		                        }
+
+		                        &.nohoverColor {
+		                            background-color: #000 !important;
+		                            .transition-delay(0s) !important;
+		                            cursor: pointer;
+		                            visibility: hidden;
+		                        }
+		                    }
+
+		                    /*附加修改样式*/
+		                    &#daxue-online{
+		                        .borderBl{
+		                            top:-260px;
+		                        }
+		                        &.active{
+		                            .borderBl{
+		                                height:250px !important;
+		                            }
+		                        }
+		                    }
+		                    
+		                    &#daxue-caiLiao{
+		                        .borderBl{
+		                            top: -90px;
+		                        }
+		                        &.active{
+		                            .borderBl{
+		                                height:70px !important;
+		                            }
+		                        }
+		                    }
+		                    &#zhuangmenSchool-online{
+		                        .borderBl{
+		                            top: -170px;
+		                        }
+		                        &.active{
+		                            .borderBl{
+		                                height:150px !important;
+		                            }
+		                        }
+		                    }
+		                    &#highJp-caiLiao{
+		                        .borderBl{
+		                            top: -90px;
+		                        }
+		                        &.active{
+		                            .borderBl{
+		                                height:70px !important;
+		                            }
+		                        }
+		                    }
+		                    &#daxue-choose{
+		                        right:590px !important;
+		                    }
+		                    &#daxue-qianYue{
+		                        right:721px !important;
+		                    }
+		                    &#daxueyuan-qianYue{
+		                        right:721px !important;
+		                    }
+		                    &#daxueyuan-choose{
+		                        right:590px !important;
+		                    }
+		                    &#daxueyuan-caiLiao{
+		                        .borderBl{
+		                            top:-90px;
+		                        }
+		                        &.active{
+		                            .borderBl{
+		                                height:80px !important;
+		                            }
+		                        }
+		                    }
+		                    &#daxue-inSchool{
+		                        &.active{
+		                            .borderBl{
+		                                height:200px !important;
+		                            }
+		                        }
+		                    }
+		                    &#daxueyuan-inSchool{
+		                        &.active{
+		                            .borderBl{
+		                                height:200px !important;
+		                            }
+		                        }
+		                    }
+		                    &#highJp-inSchool{
+		                        &.active{
+		                            .borderBl{
+		                                height:200px !important;
+		                            }
+		                        }
+		                    }
+		                    &#zhuangmenSchool-inSchool{
+		                        &.active{
+		                            .borderBl{
+		                                height:200px !important;
+		                            }
+		                        }
+		                    }
+		                    &#zhuangmenSchool-qianYue{
+		                        right:720px !important;
+		                    }
+		                    &#zhuangmenSchool-choose{
+		                        right:590px !important;
+		                        .borderBl{
+		                                top: -90px;
+		                        }
+		                         &.active{
+		                            .borderBl{
+		                                height:80px !important;
+		                            }
+		                        }
+		                    }
+		                    &#highJp-qianYue{
+		                        right:721px !important;
+		                    }
+		                    &.online {
+
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: relative;
+		                            top: -220px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+		                        
+		                        .newItem {
+		                            visibility: visible;
+
+		                            &.hoverCss {
+		                                background-color: @themecolor !important;
+		                                cursor: pointer;
+		                            }
+		                            
+		                                
+		                                &#daxue_online_item5_im{
+		                                    background-color: #59beac !important;
+		                                    &:hover{
+		                                        background-color: @themecolor !important;
+		                                    }
+		                                }
+		                        }
+
+
+		                        .borderBl {
+		                            height: 200px !important;
+		                        }
+
+		                        &.reset {
+		                            .newItem {
+		                                background-color: #000;
+		                                .border-radius(5px);
+		                                color: #fff;
+		                                font-size: 14px;
+		                                text-align: center;
+		                                padding: 5px 20px;
+		                                margin-top: 15px;
+		                                position: relative;
+		                                z-index: 11;
+		                                visibility: hidden;
+		                            }
+
+		                            .borderBl {
+		                                background-color: #dddddd;
+		                                display: block;
+		                                height: 0;
+		                                margin-left: 59px;
+		                                position: relative;
+		                                top: -220px;
+		                                width: 2px;
+		                                z-index: 10;
+		                                .transition(all 0.5s);
+		                            }
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.5s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.5s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemD {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 200px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.choose {
+
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: relative;
+		                            top: -180px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+
+		                        &.reset {
+		                            .newItem {
+		                                background-color: #000;
+		                                .border-radius(5px);
+		                                color: #fff;
+		                                font-size: 14px;
+		                                text-align: center;
+		                                padding: 5px 20px;
+		                                margin-top: 15px;
+		                                position: relative;
+		                                z-index: 11;
+		                                visibility: hidden;
+		                            }
+
+		                            .borderBl {
+		                                background-color: #dddddd;
+		                                display: block;
+		                                height: 0;
+		                                margin-left: 59px;
+		                                position: relative;
+		                                top: --180px;
+		                                width: 2px;
+		                                z-index: 10;
+		                                .transition(all 0.5s);
+		                            }
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 170px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.qianYue {
+
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: relative;
+		                            top: -220px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+
+		                        &.reset {
+		                            .newItem {
+		                                background-color: #000;
+		                                .border-radius(5px);
+		                                color: #fff;
+		                                font-size: 14px;
+		                                text-align: center;
+		                                padding: 5px 20px;
+		                                margin-top: 15px;
+		                                position: relative;
+		                                z-index: 11;
+		                                visibility: hidden;
+		                            }
+
+		                            .borderBl {
+		                                background-color: #dddddd;
+		                                display: block;
+		                                height: 0;
+		                                margin-left: 59px;
+		                                position: relative;
+		                                top: -220px;
+		                                width: 2px;
+		                                z-index: 10;
+		                                .transition(all 0.5s);
+		                            }
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.9s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.5s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.5s);
+		                                }
+
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemD {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemE {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 200px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.caiLiao {
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: relative;
+		                            top: -133px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+
+		                        &.reset {
+		                            .newItem {
+		                                background-color: #000;
+		                                .border-radius(5px);
+		                                color: #fff;
+		                                font-size: 14px;
+		                                text-align: center;
+		                                padding: 5px 20px;
+		                                margin-top: 15px;
+		                                position: relative;
+		                                z-index: 11;
+		                                visibility: hidden;
+		                            }
+
+		                            .borderBl {
+		                                background-color: #dddddd;
+		                                display: block;
+		                                height: 0;
+		                                margin-left: 59px;
+		                                position: relative;
+		                                top: -140px;
+		                                width: 2px;
+		                                z-index: 10;
+		                                .transition(all 0.5s);
+		                            }
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                 &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.7s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.9s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.5s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.5s);
+		                                }
+
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemD {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemE {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 130px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.get {
+		                    	width: 174px;
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: relative;
+		                            top: -212px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 190px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.qianZheng {
+
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: relative;
+		                            top: -130px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+
+		                        &.reset {
+		                            .newItem {
+		                                background-color: #000;
+		                                .border-radius(5px);
+		                                color: #fff;
+		                                font-size: 14px;
+		                                text-align: center;
+		                                padding: 5px 20px;
+		                                margin-top: 15px;
+		                                position: relative;
+		                                z-index: 11;
+		                                visibility: hidden;
+		                            }
+
+		                            .borderBl {
+		                                background-color: #dddddd;
+		                                display: block;
+		                                height: 0;
+		                                margin-left: 59px;
+		                                position: relative;
+		                                top: -220px;
+		                                width: 2px;
+		                                z-index: 10;
+		                                .transition(all 0.5s);
+		                            }
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 110px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.toSchool {
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: absolute;
+		                            top: -42px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.7s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.7s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.5s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.5s);
+		                                }
+
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemD {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemE {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 250px !important;
+		                            }
+		                        }
+		                    }
+
+		                    &.inSchool {
+		                        .borderBl {
+		                            background-color: #dddddd;
+		                            display: block;
+		                            height: 0;
+		                            margin-left: 59px;
+		                            position: absolute;
+		                            top: -42px;
+		                            width: 2px;
+		                            z-index: 10;
+		                            .transition(all 0.5s);
+		                        }
+
+		                        &.active {
+		                            .newItem {
+		                                top: -5px;
+
+		                                &.newItemA {
+		                                    .animation(bounceOne 0.1s linear 1.7s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.7s);
+		                                }
+
+		                                &.newItemB {
+		                                    .animation(bounceOne 0.1s linear 1.5s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.5s);
+		                                }
+
+		                                &.newItemC {
+		                                    .animation(bounceOne 0.1s linear 1.3s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.3s);
+		                                }
+
+		                                &.newItemD {
+		                                    .animation(bounceOne 0.1s linear 1.1s );
+		                                    visibility: visible;
+		                                    .transition-delay(1.1s);
+		                                }
+
+		                                &.newItemE {
+		                                    .animation(bounceOne 0.1s linear 0.9s );
+		                                    visibility: visible;
+		                                    .transition-delay(0.9s);
+		                                }
+
+		                                &.hoverCss {
+		                                    background-color: @themecolor !important;
+		                                    cursor: pointer;
+		                                    .transition-delay(0s);
+		                                }
+		                            }
+
+		                            .borderBl {
+		                                height: 250px !important;
+		                            }
+		                        }
+		                    }
+		                }
+		            }
+
+		            .allContent {
+		                position: absolute;
+		                top: 45px;
+
+		                .contentDvItem {
+		                    background-color: #f0f0f0;
+		                    padding: 20px;
+		                    .border-radius(5px);
+		                    color: #4e4e4e;
+		                    display: none;
+		                    position: relative;
+		                    font-size: 12px;
+		                    line-height: 19px;
+		                    .blueFont{
+		                        color: @themecolor;
+		                        cursor:pointer;
+		                    }
+		                    .showBigContent {
+		                        color: @themecolor;
+		                    }
+
+		                    .bold {
+		                        font-weight: 800;
+		                    }
+
+		                    .iconArrow {
+		                        background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharpl.png");
+		                        display: block;
+		                        height: 26px;
+		                        left: -9px;
+		                        position: absolute;
+		                        top: 6px;
+		                        width: 11px;
+		                    }
+
+		                    /*语言学校*/
+		                    &#yuyan_online_item1 {
+		                        left: 100px;
+		                        width: 550px;
+		                    }
+
+		                    &#yuyan_online_item2 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+		                    }
+
+		                    &#yuyan_online_item3 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 29px;
+
+		                        .iconArrow {
+		                            top: 62px;
+		                        }
+		                    }
+
+		                    &#yuyan_online_item4 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+
+		                        .iconArrow {
+		                            top: 89px;
+		                        }
+		                    }
+
+		                    &#yuyan_choose_item1 {
+		                        left: 230px;
+		                        width: 550px;
+		                    }
+
+		                    &#yuyan_choose_item2 {
+		                        left: 230px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#yuyan_choose_item3 {
+		                        left: 230px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 86px;
+		                        }
+		                    }
+
+		                    &#yuyan_qianYue_item4 {
+		                        left: 360px;
+		                        width: 550px;
+		                        top: 10px;
+
+		                        .iconArrow {
+		                            top: 121px;
+		                        }
+		                    }
+
+		                    &#yuyan_cailiao_item1 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 3px;
+		                        }
+		                    }
+
+		                    &#yuyan_cailiao_item2 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+		                    &#yuyan_cailiao_item3 {
+		                        left: 490px;
+		                        top: 45px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+		                    &#yuyan_cailiao_item4 {
+		                        left: 490px;
+		                        top: 80px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+		                    &#yuyan_get_item1 {
+		                        left: 670px;
+							    top: 1px;
+							    width: 280px;
+
+		                        .iconArrow {
+		                            top: 6px;
+		                        }
+		                    }
+		                    &#yuyan_get_item2 {
+		                        left: 670px;
+    							top: 40px;
+    							width: 240px;
+
+		                        .iconArrow {
+		                            top: 16px;
+		                        }
+		                    }
+		                    &#yuyan_get_item3 {
+		                        left: 670px;
+    							top: 100px;
+    							width: 240px;
+
+		                        .iconArrow {
+		                            top: 16px;
+		                        }
+		                    }
+
+		                    &#yuyan_qianZheng_item1 {
+		                        left: 290px;
+		                        top: -4px;
+		                        width: 270px;
+
+		                        .iconArrow {
+		                            top: 10px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 269px;
+		                        }
+		                    }
+
+		                    &#yuyan_qianZheng_item2 {
+		                        left: 110px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+		                    &#yuyan_qianZheng_item3 {
+		                        left: 110px;
+		                        top: 40px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+		                    &#yuyan_qianZheng_item4 {
+		                        left: 290px;
+		                        top: -4px;
+		                        width: 270px;
+
+		                        .iconArrow {
+		                            top: 133px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 269px;
+		                        }
+		                    }
+
+		                    &#yuyan_toSchool_item1 {
+		                        left: 410px;
+								top: -4px;
+		                        width: 270px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 269px;
+		                        }
+		                    }
+
+		                    &#yuyan_toSchool_item2 {
+		                        left: 410px;
+								top: -4px;
+		                        width: 270px;
+
+		                        .iconArrow {
+		                            top: 47px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 269px;
+		                        }
+		                    }
+
+		                    &#yuyan_toSchool_item3 {
+		                        left: 410px;
+								top: 66px;
+		                        width: 270px;
+
+		                        .iconArrow {
+		                            top: 26px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 269px;
+		                        }
+		                    }
+
+		                    &#yuyan_toSchool_item4 {
+		                        left: 410px;
+								top: 83px;
+		                        width: 270px;
+
+		                        .iconArrow {
+		                            top: 48px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 269px;
+		                        }
+		                    }
+
+		                    &#yuyan_toSchool_item5 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 44px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#yuyan_inSchool_item2 {
+		                        left: 380px;
+								top: 18px;
+								width: 430px;
+
+		                        .iconArrow {
+		                            top: 28px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+									height: 26px;
+									left: 429px;
+		                        }
+		                    }
+		                    &#yuyan_inSchool_item3 {
+		                        left: 380px;
+								top: 83px;
+								width: 430px;
+
+		                        .iconArrow {
+		                            top: 9px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+									height: 26px;
+									left: 429px;
+		                        }
+		                    }
+		                    &#yuyan_inSchool_item4 {
+		                        left: 380px;
+								top: 103px;
+								width: 430px;
+
+		                        .iconArrow {
+	                                top: 28px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+	                                width: 14px;
+									height: 26px;
+									left: 429px;
+		                        }
+		                    }
+
+		                    &#yuyan_qianYue_item1 {
+		                        left: 490px;
+		                    }
+		                    /*语言学校结束*/
+
+
+
+		                    /*日本大学*/
+		                    &#daxue_online_item1 {
+		                        left: 100px;
+		                        width: 550px;
+		                    }
+
+		                    &#daxue_online_item2 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+		                    }
+
+		                    &#daxue_online_item3 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 29px;
+
+		                        .iconArrow {
+		                            top: 62px;
+		                        }
+		                    }
+
+		                    &#daxue_online_item4 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+
+		                        .iconArrow {
+		                            top: 89px;
+		                        }
+		                    }
+		                    &#daxue_online_item5 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 128px;
+
+		                        .iconArrow {
+		                            top: 49px;
+		                        }
+		                    }
+
+		                    &#daxue_choose_item1 {
+		                        left: 360px;
+		                        width: 550px;
+		                    }
+
+		                    &#daxue_choose_item2 {
+		                        left: 360px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#daxue_choose_item3 {
+		                        left: 360px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 86px;
+		                        }
+		                    }
+
+		                    &#daxue_qianYue_item4 {
+		                        left: 230px;
+		                        width: 550px;
+		                        top: 84px;
+
+		                        .iconArrow {
+		                            top: 50px;
+		                        }
+		                    }
+
+		                    &#daxue_cailiao_item1 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 3px;
+		                        }
+		                    }
+
+		                    &#daxue_cailiao_item2 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#daxue_qianZheng_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#daxue_qianZheng_item2 {
+		                        left: 110px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#daxue_toSchool_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxue_toSchool_item2 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 47px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxue_toSchool_item3 {
+		                        left: 110px;
+		                        top: 66px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 26px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxue_toSchool_item4 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 12px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxue_toSchool_item5 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 44px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxue_qianYue_item1 {
+		                        left: 490px;
+		                    }
+		                    /*日本大学结束*/
+
+
+		                    /*日本大学院结束*/
+		                    &#daxueyuan_online_item1 {
+		                        left: 100px;
+		                        width: 550px;
+		                    }
+
+		                    &#daxueyuan_online_item2 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+		                    }
+
+		                    &#daxueyuan_online_item3 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 29px;
+
+		                        .iconArrow {
+		                            top: 62px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_online_item4 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+
+		                        .iconArrow {
+		                            top: 89px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_choose_item1 {
+		                        left: 370px;
+		                        width: 550px;
+		                    }
+
+		                    &#daxueyuan_choose_item2 {
+		                        left: 370px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_choose_item3 {
+		                        left: 370px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 86px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_qianYue_item4 {
+		                        left: 240px;
+		                        width: 550px;
+		                        top: 10px;
+
+		                        .iconArrow {
+		                            top: 121px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_cailiao_item1 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 3px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_cailiao_item2 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_qianZheng_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_qianZheng_item2 {
+		                        left: 110px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_toSchool_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_toSchool_item2 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 47px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_toSchool_item3 {
+		                        left: 110px;
+		                        top: 66px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 26px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_toSchool_item4 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 12px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_toSchool_item5 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 44px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#daxueyuan_qianYue_item1 {
+		                        left: 490px;
+		                    }
+		                    /*日本大学院结束*/
+
+
+		                    /*日本高中结束*/
+		                    &#highJp_online_item1 {
+		                        left: 100px;
+		                        width: 550px;
+		                    }
+
+		                    &#highJp_online_item2 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+		                    }
+
+		                    &#highJp_online_item3 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 29px;
+
+		                        .iconArrow {
+		                            top: 62px;
+		                        }
+		                    }
+
+		                    &#highJp_online_item4 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+
+		                        .iconArrow {
+		                            top: 89px;
+		                        }
+		                    }
+
+		                    &#highJp_choose_item1 {
+		                        left: 230px;
+		                        width: 550px;
+		                    }
+
+		                    &#highJp_choose_item2 {
+		                        left: 230px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#highJp_choose_item3 {
+		                        left: 230px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 86px;
+		                        }
+		                    }
+
+		                    &#highJp_qianYue_item4 {
+		                        left: 240px;
+		                        width: 550px;
+		                        top: 85px;
+
+		                        .iconArrow {
+		                            top: 51px;
+		                        }
+		                    }
+
+		                    &#highJp_cailiao_item1 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 3px;
+		                        }
+		                    }
+
+		                    &#highJp_cailiao_item2 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#highJp_qianZheng_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#highJp_qianZheng_item2 {
+		                        left: 110px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#highJp_toSchool_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#highJp_toSchool_item2 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 47px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#highJp_toSchool_item3 {
+		                        left: 110px;
+		                        top: 66px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 26px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#highJp_toSchool_item4 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 12px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#highJp_toSchool_item5 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 44px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#highJp_qianYue_item1 {
+		                        left: 490px;
+		                    }
+		                    /*日本高中院结束*/
+
+		                    /*专门学校*/
+		                    &#zhuangmenSchool_online_item1 {
+		                        left: 100px;
+		                        width: 550px;
+		                    }
+
+		                    &#zhuangmenSchool_online_item2 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: -6px;
+		                        .iconArrow{
+		                            top: 55px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_online_item3 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 29px;
+
+		                        .iconArrow {
+		                            top: 62px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_online_item4 {
+		                        left: 100px;
+		                        width: 550px;
+		                        top: 44px;
+
+		                        .iconArrow {
+		                            top: 89px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_choose_item1 {
+		                        left: 360px;
+		                        width: 490px;
+		                    }
+
+		                    &#zhuangmenSchool_choose_item2 {
+		                        left: 230px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_choose_item3 {
+		                        left: 230px;
+		                        width: 550px;
+
+		                        .iconArrow {
+		                            top: 86px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_qianYue_item4 {
+		                        left: 240px;
+		                        width: 550px;
+		                        top: 65px;
+
+		                        .iconArrow {
+		                            top: 61px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_cailiao_item1 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 3px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_cailiao_item2 {
+		                        left: 490px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_qianZheng_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_qianZheng_item2 {
+		                        left: 110px;
+		                        top: 0;
+		                        width: 440px;
+
+		                        .iconArrow {
+		                            top: 46px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 439px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_toSchool_item1 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 7px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_toSchool_item2 {
+		                        left: 110px;
+		                        top: -4px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 47px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_toSchool_item3 {
+		                        left: 110px;
+		                        top: 66px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 26px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_toSchool_item4 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 12px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_toSchool_item5 {
+		                        left: 110px;
+		                        top: 131px;
+		                        width: 570px;
+
+		                        .iconArrow {
+		                            top: 44px;
+		                            background: url("http://passport.shenyuan.org/WebResources/Default/images/JP/sharp.png");
+		                            width: 14px;
+		                            height: 26px;
+		                            left: 569px;
+		                        }
+		                    }
+
+		                    &#zhuangmenSchool_qianYue_item1 {
+		                        left: 490px;
+		                    }
+		                    /*专门学校结束*/
+
+		                }
+		            }
+		        }
+
+		        .contentIntor {
+		            width: 940px;
+		            margin: 0 auto;
+		            margin-top: 40px;
+
+		            .languageSchoolStep {
+		                #choose {
+		                    position: relative;
+		                    /*left:140px;*/
+		                }
+
+		                #qianYue {
+		                    position: relative;
+		                    /*left:280px;*/
+		                }
+
+		                #caiLiao {
+		                    position: relative;
+		                    /*left:420px;*/
+		                }
+
+		                #get {
+		                    position: relative;
+		                    /*right:280px;*/
+		                    .MainContenTitle {
+		                        float: right;
+		                    }
+
+		                    #zaiRi {
+		                        float: right;
+		                    }
+		                }
+
+		                #qianZheng {
+		                    position: relative;
+		                    /*right:280px;*/
+		                    .MainContenTitle {
+		                        float: right;
+		                    }
+
+		                    #zaiRi {
+		                        float: right;
+		                    }
+		                }
+
+		                #toSchool {
+		                    position: relative;
+		                    /*right:140px;*/
+		                    .MainContenTitle {
+		                        float: right;
+		                    }
+
+		                    #zaiRi {
+		                        float: right;
+		                    }
+		                }
+
+		                #inSchool {
+		                    position: relative;
+		                    /*right:0;*/
+		                    .MainContenTitle {
+		                        float: right;
+		                    }
+
+		                    #zaiRi {
+		                        float: right;
+		                    }
+		                }
+		            }
+
+		            .languageSchoolStepDv {
+		                display: none;
+		            }
+
+		            .MainContenTitle {
+		                width: 140px;
+		                float: right;
+		                text-align: right;
+
+		                .itemDv {
+		                    font-size: 14px;
+		                    color: #000;
+		                    line-height: 50px;
+
+		                    &:hover {
+		                        cursor: pointer;
+		                    }
+		                }
+
+		                &.kaoLeft {
+		                    float: left;
+		                    text-align: left;
+		                }
+		            }
+
+		            .mainContent2 {
+		                .sharp {
+		                    margin-top: 50px;
+		                }
+		            }
+
+		            .mainContent3 {
+		                .sharp {
+		                    margin-top: 100px;
+		                }
+		            }
+
+		            .mainContent4 {
+		                .sharp {
+		                    margin-top: 150px;
+		                }
+		            }
+
+		            .mainContent5 {
+		                .sharp {
+		                    margin-top: 200px;
+		                }
+		            }
+		        }
+		    }
+		}
+		.nodeJpAlertBg{
+		    background-color: gray;
+		    height: 100%;
+		    left: 0;
+		    .opacity(0.5);
+		    position: fixed;
+		    top: 0;
+		    width: 100%;
+		    z-index: 100;
+		    display:none;
+		}
+		.nodeJpAlert{
+		    background-color: #fff;
+		    border-radius: 5px;
+		    left: 50%;
+		    margin-left: -256.5px;
+		    top: 140px;
+		    width: 513px;
+		    z-index: 101;
+		    position:fixed;
+		    .border-radius(15px);
+		    display:none;
+		    .closenodeJpAlert{
+		        height: 30px;
+		        position: absolute;
+		        right: 5px;
+		        top: 19px;
+		        width: 30px;
+		        z-index: 102;
+		        &:hover{
+		            cursor:pointer;
+		        }
+		    }
+		    img{
+		        width:513px;
+		        padding:16px 0;
+		    }
+		}
+	}
+}
+
+@-webkit-keyframes linXing1 {
+     0% {
+        .transform(rotate(0deg));
+        .transform-origin(center);
+    }
+
+    100% {
+        .transform(rotate(360deg));
+        .transform-origin(center);
+    }
+}
+
+@-moz-keyframes linXing1 {
+     0% {
+        .transform(rotate(0deg));
+        .transform-origin(center);
+    }
+
+    100% {
+        .transform(rotate(360deg));
+        .transform-origin(center);
+    }
+}
+
+@-o-keyframes linXing1 {
+     0% {
+        .transform(rotate(0deg));
+        .transform-origin(center);
+    }
+
+    100% {
+        .transform(rotate(360deg));
+        .transform-origin(center);
+    }
+}
+
+@-ms-keyframes linXing1 {
+     0% {
+        .transform(rotate(0deg));
+        .transform-origin(center);
+    }
+
+    100% {
+        .transform(rotate(360deg));
+        .transform-origin(center);
+    }
+}
+
+@keyframes linXing1 {
+    0% {
+        .transform(rotate(0deg));
+        .transform-origin(center);
+    }
+
+    100% {
+        .transform(rotate(360deg));
+        .transform-origin(center);
+    }
+}
+
+
+
+@-webkit-keyframes linXing2 {
+   0% {
+        .transform(rotate(360deg));
+    }
+
+    100% {
+        .transform(rotate(0deg));
+    }
+}
+
+@-moz-keyframes linXing2 {
+    0% {
+        .transform(rotate(360deg));
+    }
+
+    100% {
+        .transform(rotate(0deg));
+    }
+}
+
+@-o-keyframes linXing2 {
+    0% {
+        .transform(rotate(360deg));
+    }
+
+    100% {
+        .transform(rotate(0deg));
+    }
+}
+
+@-ms-keyframes linXing2 {
+    0% {
+        .transform(rotate(360deg));
+    }
+
+    100% {
+        .transform(rotate(0deg));
+    }
+}
+
+@keyframes linXing2 {
+    0% {
+        .transform(rotate(360deg));
+    }
+
+    100% {
+        .transform(rotate(0deg));
+    }
+}
+
+
+@-webkit-keyframes bounceOne {
+    0% {
+        top:-5px;
+        .opacity(0.5);
+    }
+    50%{
+        top:5px;
+        .opacity(1);
+    }
+    100% {  
+       top:-5px; 
+        .opacity(1);
+    }  
+
+}  
+
+@-moz-keyframes bounceOne {
+    0% {
+        top:-5px;
+        .opacity(0.5);
+    }
+    50%{
+        top:5px;
+        .opacity(1);
+    }
+    100% {  
+       top:-5px; 
+        .opacity(1);
+    }  
+
+}  
+
+@-o-keyframes bounceOne {
+    0% {
+        top:-5px;
+        .opacity(0.5);
+    }
+    50%{
+        top:5px;
+        .opacity(1);
+    }
+    100% {  
+       top:-5px; 
+        .opacity(1);
+    }  
+
+}  
+
+@-ms-keyframes bounceOne {
+    0% {
+        top:-5px;
+        .opacity(0.5);
+    }
+    50%{
+        top:5px;
+        .opacity(1);
+    }
+    100% {  
+       top:-5px; 
+        .opacity(1);
+    }  
+
+}  
+
+@keyframes bounceOne {
+    0% {
+        top:-5px;
+        .opacity(0.5);
+    }
+    50%{
+        top:5px;
+        .opacity(1);
+    }
+    100% {  
+       top:-5px; 
+        .opacity(1);
+    } 
+}  
+
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOutDown {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+}.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}

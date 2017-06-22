@@ -1,0 +1,6 @@
+{
+  "name": "SchoolList",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./SchoolList.js"
+}

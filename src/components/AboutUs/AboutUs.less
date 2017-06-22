@@ -1,0 +1,205 @@
+@import '../function.less';
+@import '../themecolor.less';
+body{
+    background: none !important;
+}
+
+.bannerSection {
+    width: 100%;
+
+    .bannerImg {
+        width: 100%;
+    }
+}
+
+#aboutUs {
+    width: 1024px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 210px;
+
+    .contentNode_AboutUs{
+    margin-top: 20px;
+    list-style-type: none;
+    .colorRed{
+        color: red;
+    }
+    p{
+        line-height: 24px;
+        font-size: 14px;
+        color: #515151;
+
+        &.p_margin{
+            margin-top: 35px;
+        }
+        &.imgP{
+            margin: 35px 0;
+        }
+    }
+    .fontBold{
+        font-weight: 600;
+    }
+    }
+    .heroContent{
+        .heroTitle{
+            width:820px;
+            height:51px;
+            font-size:42px;
+            color:red;
+            font-weight: bold;
+            text-align: center;
+            word-spacing: 100px;
+            letter-spacing: 10px;
+            font-family:FangSong_GB2312;
+            margin-bottom: 20px;
+        }
+        .heroHeard{
+            width:820px;
+            height:51px;
+            font-size:20px;
+            color:#989898;
+            font-weight: bold;
+            margin-bottom:10px;
+        }
+        ul{
+            width:820px; 
+            li{
+               font-size:14px;
+               font-family: "微软雅黑";
+               line-height: 2.0em;
+            }
+            .firstLi{
+                font-size:22px;
+                color:red;
+                margin-bottom:5px;
+                font-size:20px;
+                color:red;
+            }
+        }
+        .heroFooter{
+            position:relative;
+            text-align: center;
+            height:100px; 
+            margin-top: 90px;
+            button{
+                border: 1px solid @themecolor;
+                background: #fff;
+                color:  @themecolor;
+                font-size: 24px;
+                padding: 10px 46px ; 
+                .border-radius(5px);
+                .transition();
+                &:hover{
+                color:  #fff;
+                background: @themecolor;
+                } 
+            }
+        }
+        .heroIframe{
+            margin-top:-80px;
+            margin-left:-20px;
+         
+        }
+    }
+
+    .leftItm {
+        width: 162px;
+        padding-top: 100px;
+
+        .aboutUsItem {
+            font-size: 18px;
+            font-weight: 600;
+            height: 48px;
+            left: -7px;
+            line-height: 38px;
+            padding-left: 50px;
+            position: relative;
+            text-align: left;
+            width: 168px;
+        }
+
+        .item {
+            height: 48px;
+            border-top: 1px solid #d0cfdb;
+            line-height: 48px;
+            font-size: 14px;
+            padding-left: 40px;
+            .transition(all 0.4s);
+            a{
+                color: #000;
+                font-size: 14px;
+
+                &:hover {
+                    cursor: pointer;
+                    text-decoration: none;
+                }
+            }
+
+            &.active {
+                a{
+                    color:@themecolor;
+                }
+            }
+        }
+        .backColor{
+            background-color:white;
+        }
+    }
+
+    .contentDv {
+        padding: 20px;
+        width: 800px;
+        margin-left: 60px;
+        display: none;
+
+        .title {
+            font-size: 30px;
+            padding-bottom: 16px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .inputDv {
+            width: 300px;
+            height: 50px;
+            margin-top: 20px;
+
+            input {
+                width: 300px;
+                height: 50px;
+                border: 1px solid #d0cfdb;
+                background: none;
+                .border-radius(0);
+                padding: 10px 17px;
+                line-height: 50px;
+                color: #9f9f9f;
+            }
+        }
+
+        .textatraDv {
+            width: 550px;
+            height: 150px;
+            margin-top: 20px;
+
+            textarea {
+                width: 550px;
+                height: 150px;
+                .border-radius(0);
+                border: 1px solid #d0cfdb;
+                padding: 10px 17px;
+            }
+        }
+
+        .btnDv {
+            margin-top: 20px;
+
+            button {
+                width: 150px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 24px;
+                line-height: 40px;
+            }
+        }
+    }
+}

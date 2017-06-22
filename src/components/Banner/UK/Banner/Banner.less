@@ -1,0 +1,189 @@
+@import "../../../themecolor.less";
+@import "../../../function.less";
+@import "../../Index/Select.less";
+@import "../../Index/animations.less";
+@import "../../Index/animations1024.less";
+@import "../../Index/animations1250.less";
+
+
+@tablinebgbolor: #EDEDED;
+
+html{
+  body{
+    .bgShadow{
+      background-color: #f7f0e4;
+      display: block;
+      height: 680px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+    .uk-banner1 {
+        background: url("http://7xnmna.com2.z0.glb.qiniucdn.com/uk-bg1.png") no-repeat center top #f7f0e4;
+        height: 680px;
+        position: relative;
+        top: 0;
+        left: 0;
+
+      h2 {
+        margin: auto;
+        left: 49%;
+        bottom: 100px;
+        position: absolute;
+      }
+
+      .da-img {
+        left: 50%;
+        top: 128px;
+        position: absolute;
+      }
+      &.slick-active {
+        h2 {
+          .animation(ukfromRightAnim1 0.8s ease-in 1s both);
+        }
+
+        p {
+          .animation(ukfromRightAnim2 0.4s ease-in 1.6s both);
+        }
+
+        .da-img {
+          .animation(ukfromRightAnim3 0.6s ease-in 2s both);
+        }
+      }
+    }
+    .uk-banner2{
+      background: url("http://7xnmna.com2.z0.glb.qiniucdn.com/uk-bg2.jpg") no-repeat center top #f7f0e4;
+        height: 680px;
+        position: relative;
+        top: 0;
+        left: 0;
+        h2{
+          margin: auto;
+          left: 39%;
+          bottom: 100px;
+          position: absolute;
+        }
+    }
+    .uk-banner3{
+      background: url("http://7xnmna.com2.z0.glb.qiniucdn.com/uk-bg3.jpg") no-repeat center top #f7f0e4;
+        height: 680px;
+        position: relative;
+        top: 0;
+        left: 0;
+        h2{
+          margin: auto;
+          left: 44%;
+          bottom: 30px;
+          position: absolute;
+        }
+    }
+    .plan-box {
+      width: 384px;
+    margin-top: -627px;
+    margin-bottom: -627px;
+    padding-left: 45px;
+    position: relative;
+    z-index: 10;
+    left: 50%;
+    margin-left: -501px;
+
+      #planForm {
+        width: 322px;
+        height: 352px;
+        background: url(../../../WebResources/Default/Images/plan/UK-form.png) no-repeat;
+
+        h1 {
+          font-weight: bold;
+          text-align: center;
+          font-size: 22px;
+          padding-top: 45px;
+          margin-bottom: 20px;
+        }
+
+        ul {
+          width: 270px;
+          margin: 0 auto;
+
+          .dropdown-menu {
+            li {
+              padding: 0;
+            }
+          }
+
+          li {
+            padding: 7px 0;
+          }
+
+          select, button, input {
+            width: 100%;
+            line-height: normal;
+          }
+
+          .bootstrap-select {
+            &.show-menu-arrow {
+              .form-control, &.form-control {
+                height: 45px;
+              }
+
+              .filter-option, .text {
+                font-size: 17px;
+              }
+
+              .filter-option {
+                color: @graydeepcolor;
+              }
+            }
+          }
+
+
+          button.btn-plan {
+            height: 45px;
+            background: url("../../../WebResources/Default/Images/left.png") no-repeat 88% center @themecolor;
+            color: #fff;
+            border: 1px solid @themedeepcolor;
+            font-size: 22px;
+            font-weight: bold;
+            .border-radius(5px);
+            text-align: left;
+            padding-left: 35px;
+            line-height: 45px;
+          }
+        }
+
+        .bottom {
+          position: absolute;
+          bottom: 28px;
+          width: 322px;
+
+          p {
+            margin: auto;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            color: @themecolor;
+          }
+
+          .message {
+            margin-top: 5px;
+            background: url("../../../WebResources/Default/Images/horn-red.png") no-repeat 118px top;
+            padding-left: 142px;
+            font-size: 12px;
+            color: #000;
+
+
+
+            span {
+              padding: 0 3px;
+              color: @themecolor;
+            }
+
+            a {
+              text-decoration: underline;
+              color: @themecolor;
+            }
+          }
+        }
+      }
+    }
+  }
+}

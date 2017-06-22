@@ -1,0 +1,6 @@
+{
+  "name": "CollegeHeader",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollegeHeader.js"
+}

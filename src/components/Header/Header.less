@@ -1,0 +1,258 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+@import '../function.less';
+@import '../themecolor.less';
+.logAndReg {
+  float: right;
+  line-height: 55px;
+  margin-right: 40px;
+  span {
+    font-size: 14px;
+    color: @themecolor;
+    .border-radius(5px);
+    .transition(0.5s);
+    padding: 5px 10px;
+    border: 2px solid @themecolor;
+    a {
+      color: @themecolor;
+    }
+    &:hover {
+      background-color: @themecolor;
+      color: #fff;
+      border: 2px solid #themecolor;
+      cursor: pointer;
+      a {
+        color: #fff;
+      }
+    }
+    &.spanOne {
+      margin-right: 20px;
+    }
+  }
+}
+.fullHeader {
+  height: 124px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  left: 0;
+}
+.nav {
+  width: 100%;
+  z-index: 1200;
+  background: #fff;
+  position: relative;
+  .transition(0.4s);
+  position: fixed;
+  top: 0;
+  .box-shadow(#a7a7a7 0px 8px 15px);
+  &.headerDisnone {
+    -webkit-transform: translate(0,-127px);
+    transform: translate(0,-127px);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+  }
+  .startBorder {
+    height: 5px;
+    background-color: #49c4fa;
+    position: absolute;
+    z-index: 1111;
+    top: 0;
+    left: 0;
+    width: 0;
+    &.done {
+      .animation( startAnimation ease 1s both);
+    }
+  }
+  &.sticky-header {
+    .nav-box {
+      .header-box {
+        margin: 10px auto;
+        width: 100%;
+        .menu-box {
+          .menu {
+            li {
+              .home-menu {
+                background: url(./home-big.png) center center no-repeat;
+              }
+              .free-menu {
+                background: url(./free-big.png) center center no-repeat;
+              }
+              .news-menu {
+                background: url(./news-big.png) center center no-repeat;
+              }
+              .college-menu {
+                background: url(./college-big.png) center center no-repeat;
+              }
+              .tutor-menu {
+                height: 42px;
+                width: 60px;
+                background: url(./tutor-big.png) center center no-repeat;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .nav-box {
+    width: 1024px;
+    margin: 0 auto;
+    .header-box {
+      float: left;
+      height: 54px;
+      margin: 35px auto;
+      width: 100%;
+      .logo {
+        width: 169px;
+        height: 42px;
+        margin: auto 36px auto 30px;
+        float: left;
+      }
+      .language {
+        width: 110px;
+        height: 42px;
+        float: left;
+        margin-right: 45px;
+        .line {
+          margin: 2px auto 7px;
+        }
+        a {
+          color: #989898;
+          font-size: 12px;
+          img {
+            vertical-align: text-bottom;
+            margin-right: 5px;
+          }
+          &.first {
+            margin-right: 22px;
+          }
+          &.active {
+            color: @themecolor;
+          }
+          &:hover {
+            color: @themecolor;
+          }
+        }
+      }
+      .menu-box {
+        float: left;
+        .menu {
+          li {
+            margin-right: 14px;
+            float: left;
+            height: 54px;
+            text-align: center;
+            border-bottom: 0;
+            cursor: pointer;
+            overflow: hidden;
+            label {
+              display: inline-block;
+              max-width: 100%;
+              margin-bottom: 5px;
+              font-weight: bold;
+            }
+            .bg {
+              display: none;
+
+              //.transparent-bgcolor(#fff,0.5);
+              width: 100%;
+              height: 54px;
+              position: relative;
+              top: -54px;
+            }
+            &.disabled {
+              cursor: auto;
+              .bg {
+                display: block;
+              }
+              &:hover {
+                border: none;
+              }
+              a {
+                cursor: auto;
+              }
+            }
+            a {
+
+              //.outline-none();
+            }
+            .home-menu {
+              display: block;
+              height: 42px;
+              width: 60px;
+              background: url(./home.png) top center no-repeat;
+            }
+            .free-menu {
+              display: block;
+              height: 42px;
+              width: 60px;
+              background: url(./free.png) top center no-repeat;
+            }
+            .open-class-menu {
+              display: block;
+              height: 42px;
+              width: 60px;
+              background: url(./open-class.png) top center no-repeat;
+            }
+            .news-menu {
+              display: block;
+              height: 42px;
+              width: 60px;
+              background: url(./news.png) top center no-repeat;
+            }
+            .college-menu {
+              display: block;
+              height: 42px;
+              width: 60px;
+              background: url(./college.png) top center no-repeat;
+            }
+            .yasi-menu {
+              display: block;
+              height: 41px;
+              width: 57px;
+              background: url(./yasi.png) top center no-repeat;
+              background-position: 0px 2px;
+            }
+            .tutor-menu {
+              display: block;
+              height: 43px;
+              width: 90px;
+              background: url(./tutor.png) top center no-repeat;
+            }
+            label {
+              a {
+                margin-bottom: 5px;
+              }
+              &.active {
+                border-bottom: 2px solid @themecolor;
+              }
+              &:hover {
+                border-bottom: 2px solid @themelightcolor;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*动画*/
+@-webkit-keyframes startAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    display: none;
+  }
+}
+@keyframes startAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    display: none;
+  }
+}

@@ -1,0 +1,327 @@
+@import "../themecolor.less";
+@import "../function.less";
+@import "../Banner/Index/Select.less";
+@import "../WebResources/Default/css/rc-CheckBox.less";
+
+html {
+    body {
+
+        .elementHidden{
+            display: none;
+        }
+        background: none;
+        .yuyanCj{
+        	float: left;
+        }
+		.rc-select-arrow {
+		  height: 25px;
+		  position: absolute;
+		  top: 1px;
+		  right: 1px;
+		  width: 20px;
+		}
+		.rc-select-selection--single {
+		  height: 25px;
+		  cursor: pointer;
+		}
+		.rc-select-selection--single .rc-select-selection__rendered {
+		  display: block;
+		  overflow: hidden;
+		  text-overflow: ellipsis;
+		  padding-left: 10px;
+		  padding-right: 20px;
+		  line-height: 25px;
+		}
+        #test-result {
+            display: block;
+        }
+
+        .test-box {
+            margin: 0 auto;
+            width: 1024px;
+            background: url('http://passport.shenyuan.org/WebResources/Default/images/testForm/bg.png') no-repeat;
+            height: 680px;
+            width: 100%;
+            position: relative;
+
+            .testForm {
+                background: url('http://passport.shenyuan.org/WebResources/Default/images/testForm/formBg.png') no-repeat;
+                width: 489px;
+                height: 625px;
+                margin: 0 auto;
+                position: relative;
+                top: 20px;
+                text-align: center;
+                font-size: 14px;
+
+                .formContent {
+                    left: 0;
+                    position: relative;
+                    top: 48px;
+                    width: 317px;
+                    left: 50%;
+                    margin-left: -158.5px;
+
+                   .geetestPagerTestDiv{
+                    //margin-left: -5px;
+                    position:fixed; 
+                    visibility: visible;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    z-index: 9999;
+                    overflow: hidden;
+                    background-color: rgba(0,0,0,.4);
+                    text-align: center;
+                    .geetestPager{
+                        text-align: center;
+                        line-height:200px; 
+                        background: #2e3846;
+                        width:360px;
+                        margin-top: 15%;
+                        display: inline-block;
+                        min-width: 300px;
+                        height: 200px;
+                        text-align: center;
+                        font-family: Helvetica,Arial,sans-serif;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        -webkit-background-clip: padding-box;
+                        -moz-background-clip: padding-box;
+                        background-clip: padding-box;
+                        -webkit-box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+                        -moz-box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+                        box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
+                    }
+                    .geetestContainer{
+                        margin-left: 36px;
+                        margin-top: 50px;
+                    }
+                    .geetBtnDiv{
+                        text-align: center;
+                    }
+                    .geetestA{
+                        outline: 0;
+                        display: block;
+                        width: 120px;
+                        text-decoration: none!important;
+                        padding: 7px 12px;
+                        margin-top: 38px;
+                        margin-left: 118px;
+                        margin-bottom: 4px;
+                        font-size: 13px;
+                        font-weight: 400;
+                        line-height: 1.428571429;
+                        color: #fff;
+                        background-color: #795aac;
+                        text-align: center;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        cursor: pointer;
+                        background-image: none;
+                        border: none;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        border-radius: 3px;
+                        -webkit-background-clip: padding-box;
+                        -moz-background-clip: padding-box;
+                        background-clip: padding-box;
+                        -webkit-touch-callout: none;
+                        -webkit-user-select: none;
+                        -khtml-user-select: none;
+                        -moz-user-select: none;
+                        -ms-user-select: none;
+                        user-select: none;
+                        -webkit-transition: all ease .3s;
+                        -moz-transition: all ease .3s;
+                        -o-transition: all ease .3s;
+                        transition: all ease .3s;
+                    }
+                   }
+
+                    .title {
+                        color: #e33607;
+                        font-weight: 600;
+                        font-size: 18px;
+                    }
+
+                    .in-t {
+                        width: 98px;
+                        text-align: right;
+                        float: left;
+                        height: 25px;
+                        line-height: 25px;
+                    }
+
+                    .tr-dv {
+                        margin-top: 23px;
+
+
+
+                        .xueli {
+                            width: 219px;
+                            float: left;
+
+                            .item {
+                                width: 60px;
+                                height: 25px;
+                                background-color: #fff;
+                                color: #000;
+                                font-size: 14px;
+                                line-height: 25px;
+                                float: left;
+
+                                &.active {
+                                    background-color: @themecolor;
+                                    color: #fff;
+                                }
+
+                                &:hover {
+                                    cursor: pointer;
+                                    background-color: @themecolor;
+                                    color: #fff;
+                                    .transition();
+                                }
+                            }
+                        }
+                    }
+
+                    .averageDv {
+                        margin-top: 15px;
+
+                        .average {
+                            width: 219px;
+                            float: left;
+                            text-align: left;
+
+                            .input-text {
+                                width: 120px;
+                                height: 25px;
+                                border-radius: 0;
+                                padding: 0 5px;
+                                color: #000;
+                                line-height: 25px;
+                            }
+
+                            .bootstrap-select {
+                                &.show-menu-arrow {
+                                    .form-control, &.form-control {
+                                        width: 120px;
+                                        height: 25px;
+                                        border-radius: 0;
+                                        line-height: 13px;
+                                        color: #000;
+                                        float: left;
+                                    }
+                                }
+
+                                .btn {
+                                    padding: 6px;
+                                }
+                            }
+
+                            label {
+                                font-size: 12px;
+                                font-weight: normal;
+                                line-height: 12px;
+
+                                &:hover {
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+
+                        .in-av {
+                            .input-text {
+                                width: 60px;
+                                height: 25px;
+                                line-height: 25px;
+                                float: left;
+                                margin-left: 10px;
+                            }
+                        }
+                    }
+
+                    .start-bt {
+                        width: 120px;
+                        height: 30px;
+                        border-radius: 0;
+                        font-size: 18px;
+                        margin-top: 15px;
+                    }
+                }
+            }
+
+            .resultForm {
+                width: 489px;
+                height: 625px;
+                margin: 0 auto;
+                position: relative;
+                top: 20px;
+                text-align: center;
+                font-size: 14px;
+
+                .flowerA {
+                    position: absolute;
+                    right: 90px;
+                    top: 60px;
+                }
+
+                .flowerB {
+                    position: absolute;
+                    bottom: 170px;
+                    left: 60px;
+                }
+
+                .formContent {
+                    left: 0;
+                    position: relative;
+                    top: 173px;
+                    width: 317px;
+                    left: 50%;
+                    margin-left: -158.5px;
+
+                    .resultFont {
+                        font-size: 18px;
+
+                        .percent {
+                            font-size: 36px;
+                            color: #77bb17;
+                        }
+                    }
+
+                    .pl-tel {
+                        font-size: 14px;
+                        color: #9f9f9f;
+                        margin-top: 15px;
+                    }
+
+                    .telDv {
+                        margin-top: 15px;
+
+                        .tel {
+                            color: #49c4fa;
+                            font-size: 18px;
+                            text-decoration: underline;
+                            line-height: 18px;
+                        }
+                    }
+                }
+            }
+
+            .bt-qq {
+                width: 138px;
+                height: 37px;
+                font-size: 18px;
+                margin-top: 15px;
+                background: #49c4fa url('http://passport.shenyuan.org/WebResources/Default/images/testForm/whiteqq.png') no-repeat scroll 15% center;
+                border: 1px solid #2ab3ef;
+                border-radius: 5px;
+                color: #fff;
+                padding-left: 35px;
+            }
+        }
+    }
+}

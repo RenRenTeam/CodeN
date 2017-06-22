@@ -1,0 +1,291 @@
+@import "../../../themecolor.less";
+@import "../../../function.less";
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    &:before, &:after {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+.reveal-modal-bg {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    .transparent-bgcolor();
+    z-index: 1300;
+    display: none;
+    top: 0;
+    left: 0;
+}
+
+#loginBox {
+    &.reveal-modal {
+        visibility: hidden;
+        top: 100px;
+        left: 50%;
+        margin-left: -176px;
+        width: 352px;
+        background: #fff;
+        position: fixed;
+        z-index: 1301;
+
+        input, button {
+            display: none;
+        }
+
+        .close-reveal-modal {
+            cursor: pointer;
+            background: data-uri('../images/close.png') no-repeat center center;
+            .transition(all 0.3s ease-in-out);
+            width: 21px;
+            height: 21px;
+            position: absolute;
+            top: 8px;
+            right: 11px;
+            display: none;
+
+            &:hover {
+                .transform(rotate(180deg));
+            }
+        }
+    }
+
+    &.show {
+        input, button {
+            display: block;
+        }
+
+        .login-box {
+            .login-tabs {
+                .hr {
+                    .line {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &.reveal-modal {
+            .close-reveal-modal {
+                display: block;
+            }
+        }
+    }
+}
+
+
+.login-box {
+    width: 100%;
+
+    input, button {
+        .outline-none();
+    }
+
+
+
+    .login-tabs {
+        width: 100%;
+        margin: 20px auto 30px auto;
+
+        .item {
+            &.qr {
+                padding-left: 20px;
+            }
+
+            float: left;
+            color: @loginregistercolor;
+            font-size: 18px;
+            line-height: 40px;
+            width: 110px;
+            text-align: center;
+            cursor: pointer;
+
+            &.selected {
+                color: #000;
+            }
+        }
+
+        .hr {
+            .line {
+                width: 110px;
+                border-bottom: 2px solid @themecolor;
+                position: absolute;
+                z-index: 2;
+                .transition();
+                left: 11px;
+                display: none;
+            }
+
+            &.qr {
+                .line {
+                    left: 11px;
+                }
+            }
+
+            &.account {
+                .line {
+                    left: 112px;
+                }
+            }
+
+            .base-line {
+                border-bottom: 1px solid @hrcolor;
+                z-index: 1;
+            }
+        }
+    }
+
+    .login-content {
+        .login-content-box {
+            height: 255px;
+
+            dl {
+                width: 240px;
+                margin: 0 auto;
+
+                input {
+                    width: 100%;
+                    height: 45px;
+                    line-height: 45px;
+                    font-size: 14px;
+                    padding: 0 10px;
+                    display: none;
+                }
+
+                button {
+                    margin: 10px auto auto auto;
+                    width: 130px;
+                    height: 45px;
+                    font-size: 24px;
+                    display: none;
+                }
+
+                dd {
+                    margin: auto auto 20px auto;
+                }
+
+                .action {
+                    width: 130px;
+                    margin: 0 auto;
+
+                    div {
+                        margin: 10px auto auto auto;
+                        font-size: 12px;
+
+                        span {
+                            color: #ff0000;
+                        }
+
+                        a {
+                            color: @loginregistercolor;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            #loginForm {
+                display: block;
+            }
+
+            #forgetpassForm {
+                display: none;
+                
+                .username {
+                    float: left;
+                    margin-right: 10px;
+                    input{
+                        width:135px;
+                    }
+                }
+
+                .getcode {
+                    float: left;
+
+                    button {
+                        width: 90px;
+                        height: 45px;
+                        font-size: 16px;
+                        margin:auto;
+                    }
+                }
+            }
+
+            &#qr {
+                width: 155px;
+                margin: 0 auto;
+
+                h4 {
+                    font-size: 18px;
+                    color: @loginregistercolor;
+                    margin: 20px auto;
+                }
+
+                .qr-pic {
+                    background: data-uri("../images/qr-bg.png") no-repeat;
+                    /*width: 150px;
+                    height: 150px;*/
+                    padding: 10px;
+
+                    img {
+                        width: 130px;
+                        height: 130px;
+                    }
+                }
+
+                .description {
+                    font-size: 14px;
+                    color: @loginregistercolor;
+                    margin: 10px auto auto;
+                }
+            }
+        }
+    }
+
+    .cooperate-box {
+        height: 110px;
+
+        h5 {
+            font-size: 12px;
+            margin: 0 auto;
+            width: 200px;
+            background: @themecolor;
+            color: #fff;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            .border-radius(10px);
+        }
+
+        ul {
+            width: 240px;
+            margin: 0 auto;
+            overflow: hidden;
+            padding-top: 35px;
+
+            li {
+                width: 47px;
+                text-align: center;
+                float: left;
+            }
+        }
+    }
+
+    .register-box {
+        width: 290px;
+        margin: 0 auto 25px auto;
+        text-align: right;
+        font-size: 12px;
+        color: @loginregistercolor;
+
+        a {
+            color: @themecolor;
+        }
+    }
+}

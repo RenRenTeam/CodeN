@@ -1,0 +1,6 @@
+{
+    "name": "TabsBox",
+    "version": "0.0.0",
+    "private": true,
+    "main": "./TabsBox.js"
+}

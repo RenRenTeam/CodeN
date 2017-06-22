@@ -1,0 +1,6 @@
+{
+  "name": "CollegeRank",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./CollegeRank.js"
+}

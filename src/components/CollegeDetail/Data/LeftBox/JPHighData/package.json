@@ -1,0 +1,6 @@
+{
+  "name": "JPHighData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./JPHighData.js"
+}

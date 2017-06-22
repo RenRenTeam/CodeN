@@ -1,0 +1,6 @@
+{
+  "name": "JPUnData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./JPUnData.js"
+}

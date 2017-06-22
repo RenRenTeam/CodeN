@@ -1,0 +1,6 @@
+{
+  "name": "ItemC",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./ItemC.js"
+}

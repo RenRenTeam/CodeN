@@ -1,0 +1,90 @@
+@import '../function.less';
+html{
+	height: 100%;
+	body{
+		margin: 0;
+		padding: 0;
+		height: 100%;
+		#app{
+			height: 100%;
+		}
+		.clear{
+			clear: both;
+		}
+		#notFound_Node{
+			background: url("http://passport.shenyuan.org/WebResources/Default/images/404/bg.jpg");
+			width: 100%;
+			height: 100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: relative;
+			.title{
+				width: 628px;
+				height: 93px;
+				padding-top: 135px;
+				position: relative;
+				display: block;
+				margin: 0 auto;
+			}
+			.content{
+				position: relative;
+				margin: 0 auto;
+				margin-top: 95px;
+				display: block;
+			}
+			.iconPart{
+				position: relative;
+				margin: 0 auto;
+				margin-top: 140px;
+				display: block;
+				width: 628px;
+				color: #fff;
+				line-height: 37px;
+				.iconItem{
+					float: left;
+					&.middle_div{
+						margin: 0 148px;
+					}
+					.icon{
+						background: url("http://passport.shenyuan.org/WebResources/Default/images/404/icon.png") no-repeat;
+						width: 37px;
+						height: 37px;
+						display: block;
+						float: left;
+						margin-right: 15px;
+						.transition();
+						&.iconB{
+							background-position: -37px 0;
+						}
+						&.iconC{
+							background-position: -74px 0;
+						}
+					}
+					a{
+						text-decoration: none;
+						color: #fff;
+						.transition();
+						font-family: "micsoft yahei";
+						font-weight: 400;
+					}
+					&:hover{
+						.icon{
+							&.iconA{
+								background-position: 0 -37px;
+							}
+							&.iconB{
+								background-position: -37px -37px;
+							}
+							&.iconC{
+								background-position: -74px -37px;
+							}
+						}
+						a{
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+	}
+}

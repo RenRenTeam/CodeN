@@ -1,0 +1,300 @@
+@import "../themecolor.less";
+@import "../function.less";
+@import '../control.less';
+
+body {
+    background: @registerbg !important;
+    font-family: 'Microsoft YaHei',Tahoma,Helvetica,Arial,"SimSun",sans-serif;
+}
+
+.df4b3s{
+  color:#df4b39;
+}
+header {
+    width: 475px;
+    margin: 100px auto;
+    .header-box {
+        height: 65px;
+
+        .logo {
+            width: 266px;
+            height: 65px;
+            float: left;
+        }
+
+        .hr {
+            height: 65px;
+            float: left;
+            border-left: 1px solid #fff;
+            margin: auto 30px;
+        }
+
+        .title {
+            height: 65px;
+            line-height: 65px;
+
+            h1 {
+                height: 65px;
+                line-height: 65px;
+                font-size: 36px;
+                color: #fff;
+                margin: 0;
+            }
+
+            float: left;
+        }
+    }
+}
+
+.register-box {
+    width: 568px;
+    margin: 0 auto;
+
+    input, button {
+        .outline-none();
+    }
+
+    .content-box {
+        height: 410px;
+        top: 0;
+        overflow: hidden;
+        bottom: 0;
+        position: relative;
+
+        &:before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: url("http://passport.shenyuan.org/WebResources/Default/images/register/envelope-back-page-shadow.png");
+            width: 568px;
+            height: 410px;
+        }
+
+        &:after {
+            position: absolute;
+            content: "";
+            background: url("http://passport.shenyuan.org/WebResources/Default/images/register/envelope.png");
+            width: 539px;
+            height: 262px;
+            bottom: 18px;
+            left: 17px;
+            z-index: 5;
+        }
+
+
+
+        .form {
+            width: 445px;
+            background: #fff;
+            margin: 0 auto;
+            overflow: hidden;
+            height: 250px;
+            top: 140px;
+            position: relative;
+            .border-radius(5px);
+        }
+
+        .register-tabs {
+            width: 360px;
+            margin: 35px auto 30px auto;
+
+            .item {
+                &.weixin {
+                    width: 110px;
+                    padding-left: 20px;
+                }
+
+                float: left;
+                color: @loginregistercolor;
+                font-size: 18px;
+                line-height: 40px;
+                width: 130px;
+                text-align: center;
+                cursor: pointer;
+
+                &.selected {
+                    color: #000;
+                }
+            }
+
+            .hr {
+                .line {
+                    width: 110px;
+                    border-bottom: 2px solid @themecolor;
+                    position: absolute;
+                    z-index: 4;
+                    .transition();
+                    left: 65px;
+                }
+
+                &.weixin {
+                    .line {
+                        width: 110px;
+                        left: 65px;
+                    }
+                }
+
+                &.account {
+                    .line {
+                        width: 140px;
+                        /*left: 168px;*/
+                        left: 40px;
+                    }
+                }
+
+                .base-line {
+                    border-bottom: 1px solid @hrcolor;
+                    z-index: 3;
+                }
+            }
+        }
+
+        .register-content {
+            .register-content-box {
+                dl {
+                    width: 350px;
+                    margin: 0 auto;
+
+                    dd {
+                        padding-bottom: 20px;
+
+                        input {
+                            height: 45px;
+                            line-height: 45px;
+                            font-size: 14px;
+                            width: 230px;
+                            padding: 0 10px;
+                            .transition();
+
+
+                        }
+
+                        .username {
+                            float: left;
+                            margin-right: 10px;
+
+                        }
+                        &.getcode{
+                            display:none;
+                            input {
+                                width: 150px;
+                            }
+                        }
+
+                        .getcode {
+
+                            float: left;
+                            display:none;
+
+                            button {
+                                width: 90px;
+                                height: 45px;
+                                font-size: 16px;
+                            }
+                        }
+                        .validation-code-input{
+                            float:left;
+                            margin-right: 10px;
+                            input{
+                                width:195px;
+                            }
+                        }
+                        .validation-code-box{
+                            float:left;
+                            width:140px;
+                        }
+
+                        .action {
+                            width: 100%;
+                            text-align: center;
+                            margin: 0 auto;
+                            display: none;
+                            padding-top: 15px;
+
+                            button {
+                                position: relative;
+                                width: 130px;
+                                height: 45px;
+                                font-size: 24px;
+                                z-index: 6;
+                            }
+                        }
+                    }
+                }
+
+                .weixin-box {
+                    width: 390px;
+                    height: 200px;
+                    margin: 0 auto;
+
+                    .qr-content {
+                        float: left;
+                        width: 150px;
+                        margin-right: 40px;
+
+                        h3 {
+                            color: @loginregistercolor;
+                            font-size: 12px;
+                            margin-bottom: 30px;
+                            text-align: center;
+                        }
+
+                        .qr-box {
+                            width: 150px;
+                            height: 150px;
+                            padding: 10px;
+                            background: url("http://passport.shenyuan.org/WebResources/Default/images/qr-bg.png") no-repeat;
+
+                            img {
+                                width: 130px;
+                                height: 130px;
+                            }
+                        }
+                    }
+
+                    .description-content {
+                        float: left;
+                        width: 195px;
+
+                        .title {
+                            background: url("http://passport.shenyuan.org/WebResources/Default/images/register/title.png") no-repeat;
+                            text-indent: 9999px;
+                            width: 162px;
+                            height: 18px;
+                            overflow: hidden;
+                            margin-bottom: 30px;
+                        }
+
+                        .content {
+                            color: @loginregistercolor;
+                            font-size: 12px;
+                            line-height: 25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .description {
+            position: relative;
+            margin: 65px auto auto;
+            z-index: 7;
+            width: 190px;
+            text-align: center;
+            color: #325d88;
+            font-size: 12px;
+            line-height: 25px;
+
+            button {
+                border-width: 1px;
+                height: 25px;
+                width: 60px;
+                text-align: center;
+                font-size: 12px;
+                .border-radius(3px);
+                cursor: pointer;
+            }
+        }
+    }
+}

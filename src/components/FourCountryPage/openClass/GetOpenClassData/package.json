@@ -1,0 +1,6 @@
+{
+  "name": "GetOpenClassData",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./GetOpenClassData.js"
+}

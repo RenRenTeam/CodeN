@@ -1,0 +1,6 @@
+{
+  "name": "JPSchoolSearch",
+  "version": "0.0.0",
+  "private": true,
+  "main": "./JPSchoolSearch.js"
+}
